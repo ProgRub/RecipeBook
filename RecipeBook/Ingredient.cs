@@ -5,15 +5,22 @@ using System.Text;
 
 namespace RecipeBook
 {
-    public class Ingredient
+    public class Ingredient : IMeasure, IConverter
     {
         private double _quantity;
-        private List _name;
-        private int _measurement;
+        private string _name;
+        private Measurement _measurement;
+
+        public Ingredient(double quantity, string name, Measurement measurement)
+        {
+            this._quantity = quantity;
+            this._name = name;
+            this._measurement = measurement;
+        }
 
         public string Name
         {
-            get => default;
+            get => _name;
             set
             {
             }
@@ -21,7 +28,7 @@ namespace RecipeBook
 
         public double Quantity
         {
-            get => default;
+            get => _quantity;
             set
             {
             }
@@ -29,10 +36,15 @@ namespace RecipeBook
 
         public Measurement Measurement
         {
-            get => default;
+            get => _measurement;
             set
             {
             }
+        }
+
+        public void Convert(Measurement newMeasurement)
+        {
+            throw new NotImplementedException();
         }
     }
 }

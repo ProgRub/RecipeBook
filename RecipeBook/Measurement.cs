@@ -10,14 +10,18 @@ namespace RecipeBook
         Ounce,
         TableSpoon,
         TeaSpoon,
-            Cup,
+        Cup,
         Pint,
         Gram,
         Quart,
         Gallon,
         Milliliter,
+        Liter,
         FluidOunce,
         Kilogram,
-        Pound
+        Pound,
+        Person,
+        Celsius,
+        Fahrenheit
     }
 }

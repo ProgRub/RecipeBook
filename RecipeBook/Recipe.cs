@@ -7,49 +7,75 @@ namespace RecipeBook
 {
     public class Recipe
     {
-        public int Name
+        public static List<Recipe> Recipes = new List<Recipe>();
+        private TimeSpan _cookTime;
+        private List<Ingredient> _ingredients;
+        private List<string> _instructions;
+        private string _name;
+        private TimeSpan _prepTime;
+        private Yield _yield;
+
+        public Recipe(string name, TimeSpan prepTime, TimeSpan cookTime, string yield)
         {
-            get => default;
+            this._name = name;
+            this._prepTime = prepTime;
+            this._cookTime = cookTime;
+            Recipes.Add(this);
+        }
+
+        public void AddInstruction(string instruction)
+        {
+            this.Instructions.Add(instruction);
+        }
+
+        public void AddIngredient(string name, double quantity, string measurement)
+        {
+            this.Ingredients.Add(new Ingredient(quantity, Name, Measurement.Celsius));
+        }
+
+        public string Name
+        {
+            get => _name;
             set
             {
             }
         }
 
-        public int PrepTime
+        public TimeSpan PrepTime
         {
-            get => default;
+            get => _prepTime;
             set
             {
             }
         }
 
-        public int CookTime
+        public TimeSpan CookTime
         {
-            get => default;
+            get => _cookTime;
             set
             {
             }
         }
 
-        public int Yield
+        public Yield Yield
         {
-            get => default;
+            get => _yield;
             set
             {
             }
         }
 
-        public int Instructions
+        public List<string> Instructions
         {
-            get => default;
+            get => _instructions;
             set
             {
             }
         }
 
-        public int Ingredients
+        public List<Ingredient> Ingredients
         {
-            get => default;
+            get => _ingredients;
             set
             {
             }

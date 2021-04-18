@@ -29,13 +29,40 @@ namespace RecipeBook
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.homeScreen1 = new RecipeBook.HomeScreen();
+            this.SuspendLayout();
+            // 
+            // homeScreen1
+            // 
+            this.homeScreen1.AutoSize = true;
+            this.homeScreen1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.homeScreen1.BackColor = System.Drawing.Color.Transparent;
+            this.homeScreen1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(255)))), ((int)(((byte)(49)))));
+            this.homeScreen1.Location = new System.Drawing.Point(12, 12);
+            this.homeScreen1.Name = "homeScreen1";
+            this.homeScreen1.Size = new System.Drawing.Size(545, 76);
+            this.homeScreen1.TabIndex = 0;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(40)))), ((int)(((byte)(7)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.homeScreen1);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(255)))), ((int)(((byte)(49)))));
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private HomeScreen homeScreen1;
     }
 }
 
