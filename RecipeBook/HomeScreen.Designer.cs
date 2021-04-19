@@ -58,6 +58,7 @@ namespace RecipeBook
             this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.textBox1.Location = new System.Drawing.Point(115, 39);
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(405, 23);
             this.textBox1.TabIndex = 1;
             // 
@@ -84,21 +85,26 @@ namespace RecipeBook
             this.buttonAddRecipe.AutoSize = true;
             this.buttonAddRecipe.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.buttonAddRecipe.FlatAppearance.BorderSize = 0;
+            this.buttonAddRecipe.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.buttonAddRecipe.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.buttonAddRecipe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAddRecipe.Location = new System.Drawing.Point(266, 89);
+            this.buttonAddRecipe.Location = new System.Drawing.Point(246, 68);
             this.buttonAddRecipe.Name = "buttonAddRecipe";
             this.buttonAddRecipe.Size = new System.Drawing.Size(77, 25);
             this.buttonAddRecipe.TabIndex = 4;
             this.buttonAddRecipe.Text = "Add Recipe";
             this.buttonAddRecipe.UseVisualStyleBackColor = true;
+            this.buttonAddRecipe.Click += new System.EventHandler(this.buttonAddRecipe_Click);
             // 
             // buttonManageRecipes
             // 
             this.buttonManageRecipes.AutoSize = true;
             this.buttonManageRecipes.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.buttonManageRecipes.FlatAppearance.BorderSize = 0;
+            this.buttonManageRecipes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.buttonManageRecipes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.buttonManageRecipes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonManageRecipes.Location = new System.Drawing.Point(266, 120);
+            this.buttonManageRecipes.Location = new System.Drawing.Point(246, 99);
             this.buttonManageRecipes.Name = "buttonManageRecipes";
             this.buttonManageRecipes.Size = new System.Drawing.Size(103, 25);
             this.buttonManageRecipes.TabIndex = 5;

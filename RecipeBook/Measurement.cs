@@ -20,8 +20,8 @@ namespace RecipeBook
         FluidOunce,
         Kilogram,
         Pound,
-        Person,
+        Serving,
         Celsius,
-        Fahrenheit
+        Fahrenheit,Unit
     }
 }

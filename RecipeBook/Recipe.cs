@@ -14,6 +14,7 @@ namespace RecipeBook
         private string _name;
         private TimeSpan _prepTime;
         private Yield _yield;
+        private string _url;
 
         public Recipe(string name, TimeSpan prepTime, TimeSpan cookTime, string yield)
         {
@@ -76,6 +77,14 @@ namespace RecipeBook
         public List<Ingredient> Ingredients
         {
             get => _ingredients;
+            set
+            {
+            }
+        }
+
+        public int URL
+        {
+            get => default;
             set
             {
             }

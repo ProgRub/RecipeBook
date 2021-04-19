@@ -5,18 +5,21 @@ using System.Text;
 
 namespace RecipeBook
 {
-    public class Yield : IMeasure
+    public class Yield
     {
         private Measurement _measurement;
 
-        private double _quantity;
+        private double _minimumQuantity;
+        private double _maximumQuantity;
 
-        public Yield(Measurement measurement, double quantity)
+        public Yield(Measurement measurement, double minimumQuantity, double maximumQuantity)
         {
             this._measurement = measurement;
-            this._quantity = quantity;
+            this._minimumQuantity = minimumQuantity;
+            this._maximumQuantity = maximumQuantity;
         }
         public Measurement Measurement { get => _measurement; set => throw new NotImplementedException(); }
-        public double Quantity { get => _quantity; set => throw new NotImplementedException(); }
+        public double MinimumQuantity { get => _minimumQuantity; set => throw new NotImplementedException(); }
+        public double MaximumQuantity { get => _maximumQuantity; set => throw new NotImplementedException(); }
     }
 }
