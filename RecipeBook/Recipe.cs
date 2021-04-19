@@ -11,16 +11,22 @@ namespace RecipeBook
         private TimeSpan _cookTime;
         private List<Ingredient> _ingredients;
         private List<string> _instructions;
+        private List<string> _notes;
         private string _name;
         private TimeSpan _prepTime;
         private Yield _yield;
         private string _url;
 
-        public Recipe(string name, TimeSpan prepTime, TimeSpan cookTime, string yield)
+        public Recipe(string name, TimeSpan prepTime, TimeSpan cookTime, Yield yield,string url)
         {
             this._name = name;
             this._prepTime = prepTime;
             this._cookTime = cookTime;
+            this._yield = yield;
+            this._ingredients = new List<Ingredient>();
+            this._instructions = new List<string>();
+            this._notes = new List<string>();
+            this._url = url;
             Recipes.Add(this);
         }
 
@@ -29,9 +35,14 @@ namespace RecipeBook
             this.Instructions.Add(instruction);
         }
 
-        public void AddIngredient(string name, double quantity, string measurement)
+        public void AddNote(string note)
         {
-            this.Ingredients.Add(new Ingredient(quantity, Name, Measurement.Celsius));
+            this.Notes.Add(note);
+        }
+
+        public void AddIngredient(Ingredient ingredient)
+        {
+            this.Ingredients.Add(ingredient);
         }
 
         public string Name
@@ -74,6 +85,14 @@ namespace RecipeBook
             }
         }
 
+        public List<string> Notes
+        {
+            get => _notes;
+            set
+            {
+            }
+        }
+
         public List<Ingredient> Ingredients
         {
             get => _ingredients;
@@ -82,9 +101,9 @@ namespace RecipeBook
             }
         }
 
-        public int URL
+        public string URL
         {
-            get => default;
+            get => _url;
             set
             {
             }

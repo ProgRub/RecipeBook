@@ -16,81 +16,49 @@ namespace RecipeBook
 {
     public partial class AddRecipeScreen : UserControl
     {
+        private string[] _baseRecipeText;
         public AddRecipeScreen()
         {
             InitializeComponent();
+            this._baseRecipeText = this.richTextBoxRecipe.Lines;
         }
 
         private void ScrapeRecipe(string url)
         {
             Debug.WriteLine("HERE");
-            var htmlWeb = new HtmlWeb();
-            var htmlDoc = htmlWeb.Load(url);
-            var recipeName = htmlDoc.DocumentNode.Descendants("h2").ToList()[0].InnerText;
-            var recipeBasics = htmlDoc.DocumentNode.Descendants("span");
-            TimeSpan cookTime = ConvertStringToTimeSpan(recipeBasics.Where(x => x.GetAttributeValue("class", "nothing") == "tasty-recipes-cook-time").ToList()[0].InnerText);
-            TimeSpan prepTime = ConvertStringToTimeSpan(recipeBasics.Where(x => x.GetAttributeValue("class", "nothing") == "tasty-recipes-prep-time").ToList()[0].InnerText);
-            Yield yield = ConvertInfoToYield(recipeBasics.Where(x => x.GetAttributeValue("class", "nothing") == "tasty-recipes-yield").ToList()[0].Descendants("span").Where(x => x.GetAttributeValue("data-amount", "nothing") != "nothing" ).ToList());
-            Debug.WriteLine(yield.Measurement+" "+yield.MinimumQuantity+" "+yield.MaximumQuantity);
-            foreach (var item in htmlDoc.DocumentNode.Descendants("div"))
+            Recipe recipe = null;
+            if (url.Contains("gimmesomeoven") || url.Contains("pinchofyum"))
             {
-                Debug.WriteLine(item.GetAttributeValue("class", "nothing"));
+                recipe = new TastyRecipeScraper().ScrapeRecipe(url);
             }
+            UpdateRecipeTextBox(recipe);
         }
 
-        private Measurement ConvertStringToMeasurement(string measurementString)
+        private void UpdateRecipeTextBox(Recipe recipe)
         {
-            switch (measurementString)
+            this.richTextBoxRecipe.Lines = this._baseRecipeText;
+            var list = new List<string>(this.richTextBoxRecipe.Lines);
+            list[0] += " " + recipe.Name;
+            list[1] += " " + recipe.PrepTime;
+            list[2] += " " + recipe.CookTime;
+            list[3] += " " + recipe.Yield;
+            int index;
+            for (index = 0; index < recipe.Ingredients.Count; index++)
             {
-                case "cup":
-                    return Measurement.Cup;
-                case "serving":
-                    return Measurement.Serving;
-                default:
-                    return Measurement.Unit;
+                list.Insert(5 + index, recipe.Ingredients[index].Name);
             }
+            int lineIndex = 6 + index;
+            for (index = 0; index < recipe.Instructions.Count; index++)
+            {
+                list.Insert(lineIndex + index, recipe.Instructions[index]);
+            }
+            for (index = 0; index < recipe.Notes.Count; index++)
+            {
+                list.Add(recipe.Notes[index]);
+            }
+            this.richTextBoxRecipe.Lines =list.ToArray();
+            
         }
-
-        private TimeSpan ConvertStringToTimeSpan(string timeString)
-        {
-            var timeSplit = timeString.Split(new char[] { ' ' });
-            int totalMinutes = 0;
-            for (int index = 0; index < timeSplit.Length; index+=2)
-            {
-                if(timeSplit[index+1].ToLower().Contains( "min"))
-                {
-                    totalMinutes += int.Parse(timeSplit[index]);
-                }else if (timeSplit[index + 1].ToLower().Contains("hour"))
-                {
-                    totalMinutes += int.Parse(timeSplit[index])*60;
-                }
-            }
-            return new TimeSpan(totalMinutes/60,totalMinutes%60,0);
-        }
-
-        private Ingredient ConvertStringToIngredient(string ingredientString)
-        {
-            return new Ingredient(0, "", Measurement.Celsius);
-        }
-
-        private Yield ConvertInfoToYield(List<HtmlNode> yieldInfo)
-        {
-            foreach (var item in yieldInfo.Take(yieldInfo.Count-1))
-            {
-                Debug.WriteLine(item.GetAttributeValue("data-amount","nothing"));
-            }
-            double minimum = double.Parse(yieldInfo[0].GetAttributeValue("data-amount", "nothing")),maximum;
-            try
-            {
-                 maximum= double.Parse(yieldInfo[1].GetAttributeValue("data-amount", "nothing"));
-            }
-            catch (Exception)
-            {
-                 maximum = minimum;
-            }
-            return new Yield(ConvertStringToMeasurement(yieldInfo[0].GetAttributeValue("data-unit", "serving")), minimum,maximum);
-        }
-
         private void buttonSubmitURL_Click(object sender, EventArgs e)
         {
             Debug.WriteLine("HERE");
