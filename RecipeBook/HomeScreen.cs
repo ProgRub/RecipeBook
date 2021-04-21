@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.WindowsAPICodePack.Dialogs;
+using System.IO;
 
 namespace RecipeBook
 {
@@ -15,11 +17,6 @@ namespace RecipeBook
         public HomeScreen()
         {
             InitializeComponent();
-        }
-
-        private void buttonChooseDirectory_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void buttonAddRecipe_Click(object sender, EventArgs e)

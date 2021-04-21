@@ -30,12 +30,15 @@ namespace RecipeBook
                 case "pound":
                 case "pounds":
                     return Measurement.Pound;
+                case "ounce":
+                case "ounces":
+                    return Measurement.Ounce;
                 default:
                     return Measurement.Unit;
             }
         }
         TimeSpan ConvertStringToTimeSpan(string timeString);
         Ingredient ConvertHtmlNodeToIngredient(HtmlNode ingredientNode);
-        Yield ConvertInfoToYield(List<HtmlNode> yieldInfo);
+        string ConvertInfoToYield(HtmlNode yieldInfo);
     }
 }

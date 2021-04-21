@@ -40,7 +40,7 @@ namespace RecipeBook
             this.textBoxURL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(79)))), ((int)(((byte)(0)))));
             this.textBoxURL.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxURL.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.textBoxURL.Location = new System.Drawing.Point(285, 565);
+            this.textBoxURL.Location = new System.Drawing.Point(414, 680);
             this.textBoxURL.Name = "textBoxURL";
             this.textBoxURL.Size = new System.Drawing.Size(484, 23);
             this.textBoxURL.TabIndex = 2;
@@ -48,7 +48,7 @@ namespace RecipeBook
             // labelRecipeURL
             // 
             this.labelRecipeURL.AutoSize = true;
-            this.labelRecipeURL.Location = new System.Drawing.Point(213, 568);
+            this.labelRecipeURL.Location = new System.Drawing.Point(342, 683);
             this.labelRecipeURL.Name = "labelRecipeURL";
             this.labelRecipeURL.Size = new System.Drawing.Size(66, 15);
             this.labelRecipeURL.TabIndex = 3;
@@ -62,7 +62,7 @@ namespace RecipeBook
             this.buttonSubmitURL.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.buttonSubmitURL.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.buttonSubmitURL.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSubmitURL.Location = new System.Drawing.Point(775, 563);
+            this.buttonSubmitURL.Location = new System.Drawing.Point(904, 678);
             this.buttonSubmitURL.Name = "buttonSubmitURL";
             this.buttonSubmitURL.Size = new System.Drawing.Size(79, 25);
             this.buttonSubmitURL.TabIndex = 4;
@@ -74,11 +74,11 @@ namespace RecipeBook
             // 
             this.richTextBoxRecipe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(79)))), ((int)(((byte)(0)))));
             this.richTextBoxRecipe.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.richTextBoxRecipe.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.richTextBoxRecipe.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxRecipe.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.richTextBoxRecipe.Location = new System.Drawing.Point(75, 0);
+            this.richTextBoxRecipe.Location = new System.Drawing.Point(0, -2);
             this.richTextBoxRecipe.Name = "richTextBoxRecipe";
-            this.richTextBoxRecipe.Size = new System.Drawing.Size(900, 559);
+            this.richTextBoxRecipe.Size = new System.Drawing.Size(1330, 674);
             this.richTextBoxRecipe.TabIndex = 6;
             this.richTextBoxRecipe.Text = "Name:\nPrep Time:\nCook Time:\nYield:\nIngredients:\nInstructions:\nNotes:";
             // 
@@ -94,7 +94,7 @@ namespace RecipeBook
             this.Controls.Add(this.textBoxURL);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(255)))), ((int)(((byte)(49)))));
             this.Name = "AddRecipeScreen";
-            this.Size = new System.Drawing.Size(1151, 674);
+            this.Size = new System.Drawing.Size(1339, 725);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -9,21 +9,21 @@ namespace RecipeBook
     {
         public static List<Recipe> Recipes = new List<Recipe>();
         private TimeSpan _cookTime;
-        private List<Ingredient> _ingredients;
+        private Dictionary<string,List<Ingredient>> _ingredients;
         private List<string> _instructions;
         private List<string> _notes;
         private string _name;
         private TimeSpan _prepTime;
-        private Yield _yield;
+        private string _yield;
         private string _url;
 
-        public Recipe(string name, TimeSpan prepTime, TimeSpan cookTime, Yield yield,string url)
+        public Recipe(string name, TimeSpan prepTime, TimeSpan cookTime, string yield,string url)
         {
             this._name = name;
             this._prepTime = prepTime;
             this._cookTime = cookTime;
             this._yield = yield;
-            this._ingredients = new List<Ingredient>();
+            this._ingredients = new Dictionary<string, List<Ingredient>>();
             this._instructions = new List<string>();
             this._notes = new List<string>();
             this._url = url;
@@ -40,9 +40,13 @@ namespace RecipeBook
             this.Notes.Add(note);
         }
 
-        public void AddIngredient(Ingredient ingredient)
+        public void AddIngredient(string key,Ingredient ingredient)
         {
-            this.Ingredients.Add(ingredient);
+            if (!this.Ingredients.ContainsKey(key))
+            {
+                this.Ingredients.Add(key, new List<Ingredient>());
+            }
+            this.Ingredients[key].Add(ingredient);
         }
 
         public string Name
@@ -69,7 +73,7 @@ namespace RecipeBook
             }
         }
 
-        public Yield Yield
+        public string Yield
         {
             get => _yield;
             set
@@ -93,7 +97,7 @@ namespace RecipeBook
             }
         }
 
-        public List<Ingredient> Ingredients
+        public Dictionary<string, List<Ingredient>> Ingredients
         {
             get => _ingredients;
             set
