@@ -31,6 +31,7 @@ namespace RecipeBook
             get => _quantity;
             set
             {
+                _quantity = value;
             }
         }
 

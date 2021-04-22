@@ -29,5 +29,17 @@ namespace RecipeBook
             (this.Parent as Form1).Controls.Add(aux);
             (this.Parent as Form1).ActiveControl = aux;
         }
+
+        private void buttonManageRecipes_Click(object sender, EventArgs e)
+        {
+
+            this.Hide();
+            ManageRecipesScreen aux = new ManageRecipesScreen()
+            {
+                Dock = DockStyle.Fill
+            };
+            (this.Parent as Form1).Controls.Add(aux);
+            (this.Parent as Form1).ActiveControl = aux;
+        }
     }
 }

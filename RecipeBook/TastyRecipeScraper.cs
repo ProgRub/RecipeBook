@@ -91,10 +91,12 @@ namespace RecipeBook
                 recipe.AddInstruction(WebUtility.HtmlDecode(instruction.InnerText));
                 Debug.WriteLine(recipe.Instructions.Last());
             }
+            if(htmlDoc.DocumentNode.Descendants("div").Where(x => x.GetAttributeValue("class", "nothing") == "tasty-recipes-notes").Count() > 0){ 
             foreach (var note in htmlDoc.DocumentNode.Descendants("div").Where(x => x.GetAttributeValue("class", "nothing") == "tasty-recipes-notes").ToList()[0].Descendants("p"))
             {
                 recipe.AddNote(WebUtility.HtmlDecode(note.InnerText));
                 Debug.WriteLine(recipe.Notes.Last());
+            }
             }
             return recipe;
         }

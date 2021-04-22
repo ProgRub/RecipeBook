@@ -67,6 +67,7 @@ namespace RecipeBook
             xmlDocument.Root.RemoveAll();
             foreach (Recipe recipe in Recipe.Recipes)
             {
+                recipe.Scale(1);
                 XElement xElementRecipe= new XElement("Recipe");
                 xElementRecipe.SetAttributeValue("name", recipe.Name);
                 xElementRecipe.SetAttributeValue("prepTime", recipe.PrepTime.ToString());

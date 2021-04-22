@@ -41,9 +41,10 @@ namespace RecipeBook
             this.buttonAddRecipe.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.buttonAddRecipe.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.buttonAddRecipe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAddRecipe.Location = new System.Drawing.Point(0, 0);
+            this.buttonAddRecipe.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonAddRecipe.Location = new System.Drawing.Point(15, 0);
             this.buttonAddRecipe.Name = "buttonAddRecipe";
-            this.buttonAddRecipe.Size = new System.Drawing.Size(77, 25);
+            this.buttonAddRecipe.Size = new System.Drawing.Size(96, 30);
             this.buttonAddRecipe.TabIndex = 4;
             this.buttonAddRecipe.Text = "Add Recipe";
             this.buttonAddRecipe.UseVisualStyleBackColor = true;
@@ -57,12 +58,14 @@ namespace RecipeBook
             this.buttonManageRecipes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.buttonManageRecipes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.buttonManageRecipes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonManageRecipes.Location = new System.Drawing.Point(0, 31);
+            this.buttonManageRecipes.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonManageRecipes.Location = new System.Drawing.Point(0, 36);
             this.buttonManageRecipes.Name = "buttonManageRecipes";
-            this.buttonManageRecipes.Size = new System.Drawing.Size(103, 25);
+            this.buttonManageRecipes.Size = new System.Drawing.Size(128, 30);
             this.buttonManageRecipes.TabIndex = 5;
             this.buttonManageRecipes.Text = "Manage Recipes";
             this.buttonManageRecipes.UseVisualStyleBackColor = true;
+            this.buttonManageRecipes.Click += new System.EventHandler(this.buttonManageRecipes_Click);
             // 
             // HomeScreen
             // 
