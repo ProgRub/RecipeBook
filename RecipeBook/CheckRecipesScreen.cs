@@ -17,7 +17,6 @@ namespace RecipeBook
         public CheckRecipesScreen(int recipeIndex)
         {
             InitializeComponent();
-            Debug.WriteLine(recipeIndex);
             this.recipe = Recipe.Recipes[recipeIndex];
             this.recipe.SetRecipeInRichTextBox(this.richTextBoxRecipe);
         }

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Drawing;
+using System.Diagnostics;
 
 namespace RecipeBook
 {
@@ -56,6 +57,8 @@ namespace RecipeBook
         {
             if (multiplier != this.scale)
             {
+                string[] yieldSplit = Yield.Split(null);
+                double number;
                 if (multiplier == 1)
                 {
                     multiplier = 1 / this.scale;
@@ -63,6 +66,24 @@ namespace RecipeBook
                 }
                 else
                 {
+                    for (int index = 0; index < yieldSplit.Length; index++)
+                    {
+                        if (yieldSplit[index].Contains("-"))
+                        {
+                            var aux = yieldSplit[index].Split('-');
+                            for (int i = 0; i < aux.Length; i++)
+                            {
+                                Debug.WriteLine(aux[i]);
+                                aux[i] = (double.Parse(aux[i]) / this.scale).ToString();
+                                Debug.WriteLine(aux[i]);
+                            }
+                            yieldSplit[index] = string.Join('-', aux);
+                        }
+                        else if (double.TryParse(yieldSplit[index], out number))
+                        {
+                            yieldSplit[index] = (number / this.scale).ToString();
+                        }
+                    }
                     foreach (string key in this.Ingredients.Keys)
                     {
                         foreach (Ingredient ingredient in this.Ingredients[key])
@@ -72,6 +93,23 @@ namespace RecipeBook
                     }
                     this.scale = multiplier;
                 }
+                for (int index = 0; index < yieldSplit.Length; index++)
+                {
+                    if (yieldSplit[index].Contains("-"))
+                    {
+                        var aux = yieldSplit[index].Split('-');
+                        for (int i = 0; i < aux.Length; i++)
+                        {
+                            aux[i] = (double.Parse(aux[i]) * multiplier).ToString();
+                        }
+                        yieldSplit[index] = string.Join('-', aux);
+                    }
+                    else if (double.TryParse(yieldSplit[index], out number))
+                    {
+                        yieldSplit[index] = (number * multiplier).ToString();
+                    }
+                }
+                this._yield = string.Join(' ', yieldSplit);
                 foreach (string key in this.Ingredients.Keys)
                 {
                     foreach (Ingredient ingredient in this.Ingredients[key])
