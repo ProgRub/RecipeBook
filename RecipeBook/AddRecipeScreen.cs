@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Diagnostics;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace RecipeBook
@@ -22,7 +15,6 @@ namespace RecipeBook
 
         private void GetRecipe(string url)
         {
-            Debug.WriteLine("HERE");
             Recipe recipe = null;
             foreach (Recipe item in Recipe.Recipes)
             {

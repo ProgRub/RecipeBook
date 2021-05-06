@@ -1,10 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 using System.Drawing;
-using System.Diagnostics;
 
 namespace RecipeBook
 {
@@ -73,9 +70,7 @@ namespace RecipeBook
                             var aux = yieldSplit[index].Split('-');
                             for (int i = 0; i < aux.Length; i++)
                             {
-                                Debug.WriteLine(aux[i]);
                                 aux[i] = (double.Parse(aux[i]) / this.scale).ToString();
-                                Debug.WriteLine(aux[i]);
                             }
                             yieldSplit[index] = string.Join('-', aux);
                         }
@@ -125,6 +120,7 @@ namespace RecipeBook
         {
             var list = new List<string>();
             list.Add("Name: " + this.Name);
+            list.Add("URL: " + this.URL);
             list.Add("Preparation Time: " + this.PrepTime);
             list.Add("Cooking Time: " + this.CookTime);
             list.Add("Yield: " + this.Yield);

@@ -29,6 +29,7 @@ namespace RecipeBook
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.homeScreen1 = new RecipeBook.HomeScreen();
             this.SuspendLayout();
             // 
@@ -40,7 +41,7 @@ namespace RecipeBook
             this.homeScreen1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(255)))), ((int)(((byte)(49)))));
             this.homeScreen1.Location = new System.Drawing.Point(12, 12);
             this.homeScreen1.Name = "homeScreen1";
-            this.homeScreen1.Size = new System.Drawing.Size(545, 76);
+            this.homeScreen1.Size = new System.Drawing.Size(131, 69);
             this.homeScreen1.TabIndex = 0;
             // 
             // Form1
@@ -53,6 +54,7 @@ namespace RecipeBook
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.homeScreen1);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(255)))), ((int)(((byte)(49)))));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);

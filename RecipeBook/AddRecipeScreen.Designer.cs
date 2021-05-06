@@ -81,7 +81,7 @@ namespace RecipeBook
             this.richTextBoxRecipe.Name = "richTextBoxRecipe";
             this.richTextBoxRecipe.Size = new System.Drawing.Size(1330, 674);
             this.richTextBoxRecipe.TabIndex = 6;
-            this.richTextBoxRecipe.Text = "Name:\nPrep Time:\nCook Time:\nYield:\nIngredients:\nInstructions:\nNotes:";
+            this.richTextBoxRecipe.Text = "Name:\nURL:\nPrep Time:\nCook Time:\nYield:\nIngredients:\nInstructions:\nNotes:";
             // 
             // buttonBack
             // 
