@@ -34,15 +34,18 @@ namespace Components.RecipeScrapers
                 case "tablespoon":
                 case "tablespoons":
                 case "tbsp":
+                case "Tbsp":
                 case "tbsp.":
                     return Measurement.TableSpoon;
                 case "teaspoon":
                 case "teaspoons":
                 case "tsp":
+                case "Tsp":
                 case "tsp.":
                     return Measurement.TeaSpoon;
                 case "pound":
                 case "pounds":
+                case "lbs":
                     return Measurement.Pound;
                 case "ounce":
                 case "ounces":
@@ -76,6 +79,24 @@ namespace Components.RecipeScrapers
                 }
             }
             return new TimeSpan(totalMinutes / 60, totalMinutes % 60, 0);
+        }
+
+        protected double ConvertFactionToDouble(IEnumerable<string> faction)
+        {
+            double result = 0.0;
+            foreach (var number in faction)
+            {
+                if (number.Contains("/"))
+                {
+                    var numberSplit = number.Split('/');
+                    result += double.Parse(numberSplit[0]) / double.Parse(numberSplit[1]);
+                }
+                else
+                {
+                    result += double.Parse(char.GetNumericValue(number[0]).ToString());
+                }
+            }
+            return result;
         }
     }
 }

@@ -55,8 +55,8 @@ namespace RecipeBook
             this.Controls.Add(this.homeScreen1);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(255)))), ((int)(((byte)(49)))));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "RecipeBook";
+            this.Text = "RecipeBook";
             this.ResumeLayout(false);
             this.PerformLayout();
 

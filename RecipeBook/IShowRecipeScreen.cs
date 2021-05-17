@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Diagnostics;
 using System.Drawing;
 using System.Windows.Forms;
 using Components;
@@ -9,17 +10,19 @@ namespace RecipeBook
     {
         public static void SetRecipeInRichTextBox(RichTextBox richTextBox,Recipe recipe)
         {
-            var list = new List<string>();
-            list.Add("Name: " + recipe.Name);
-            list.Add("URL: " + recipe.URL);
-            list.Add("Preparation Time: " + recipe.PrepTime);
-            list.Add("Cooking Time: " + recipe.CookTime);
-            list.Add("Yield: " + recipe.Yield);
-            list.Add("Ingredients:");
+            var list = new List<string>
+            {
+                "Name: " + recipe.Name,
+                "URL: " + recipe.URL,
+                "Preparation Time: " + recipe.PrepTime,
+                "Cooking Time: " + recipe.CookTime,
+                "Yield: " + recipe.Yield,
+                "Ingredients:"
+            };
             int index;
             foreach (var key in recipe.Ingredients.Keys)
             {
-                if (key != "")
+                if (!string.IsNullOrWhiteSpace(key))
                 {
                     list.Add(key+":");
                 }
@@ -31,13 +34,14 @@ namespace RecipeBook
                     }
                     else
                     {
-                        list.Add(recipe.Ingredients[key][index].Quantity + " " + (recipe.Ingredients[key][index].Measurement != Measurement.Unit ? recipe.Ingredients[key][index].Measurement.ToString() + (recipe.Ingredients[key][index].Quantity > 1 ? "s " : " ") : "") + recipe.Ingredients[key][index].Name);
+                        list.Add(recipe.Ingredients[key][index].Quantity + " " + (recipe.Ingredients[key][index].Measurement != Measurement.Unit ? recipe.Ingredients[key][index].Measurement + (recipe.Ingredients[key][index].Quantity > 1 ? "s " : " ") : "") + recipe.Ingredients[key][index].Name);
                     }
                 }
             }
             list.Add("Instructions:");
             for (index = 0; index < recipe.Instructions.Count; index++)
             {
+                Debug.WriteLine(recipe.Instructions[index]);
                 list.Add(recipe.Instructions[index]);
             }
             list.Add("Notes:");

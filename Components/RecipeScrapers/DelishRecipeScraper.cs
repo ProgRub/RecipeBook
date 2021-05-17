@@ -15,24 +15,6 @@ namespace Components.RecipeScrapers
         }
 
         public static RecipeScraper Instance { get; } = new DelishRecipeScraper();
-
-        private double ConvertFactionToDouble(IEnumerable<string> faction)
-        {
-            double result = 0.0;
-            foreach (var number in faction)
-            {
-                if (number.Contains("/"))
-                {
-                    var numberSplit = number.Split('/');
-                    result += double.Parse(numberSplit[0]) / double.Parse(numberSplit[1]);
-                }
-                else
-                {
-                    result += double.Parse(number);
-                }
-            }
-            return result;
-        }
         public override TimeSpan GetCookTime()
         {
             var totalTimeHtmlNode = HtmlDocument.DocumentNode.Descendants("div").Where(x => x.GetAttributeValue("class", "nothing") == "recipe-details-item total-time").ToList()[0];
@@ -76,7 +58,8 @@ namespace Components.RecipeScrapers
                 var ingredientsUse = "";
                 var ingredientTitleList = ingredientSectionHtmlNode.Descendants()
                     .Where(x => x.GetAttributeValue("class", "nothing") == "ingredient-title").ToList();
-                if (ingredientTitleList.Count > 0)
+                Debug.WriteLine(ingredientTitleList.First().InnerText);
+                if (ingredientTitleList.Count > 0 && !string.IsNullOrWhiteSpace(ingredientTitleList.First().InnerText))
                 {
                     var numberWordsToSkip = 2;
                     if (ingredientTitleList.First().InnerText.Split(new char[0], StringSplitOptions.RemoveEmptyEntries)[1] != "The")
@@ -116,14 +99,6 @@ namespace Components.RecipeScrapers
                     recipe.AddIngredient(ingredientsUse, new Ingredient(amount, ingredientName, measurement));
                 }
             }
-
-            //foreach (var key in recipe.Ingredients.Keys)
-            //{
-            //    foreach (var value in recipe.Ingredients[key])
-            //    {
-            //        Debug.WriteLine(key+" ("+value.Quantity+" "+value.Measurement+" "+value.Name+")");
-            //    }
-            //}
         }
         public override void SetInstructions(Recipe recipe)
         {
@@ -145,7 +120,8 @@ namespace Components.RecipeScrapers
                     //Debug.WriteLine(ingredientHtmlNode.GetAttributeValue("class","fuck"));
                     instructions.Add(WebUtility.HtmlDecode(instructionHtmlNode.InnerText));
                 }
-                recipe.AddInstruction(instructionsUse + ": " + string.Join(Environment.NewLine,instructions.ToArray()));
+                //Debug.WriteLine(string.IsNullOrWhiteSpace(instructionsUse));
+                recipe.AddInstruction((!string.IsNullOrWhiteSpace(instructionsUse)? instructionsUse + ": ":"") + string.Join(Environment.NewLine,instructions.ToArray()));
             }
 
             foreach (var instruction in recipe.Instructions)

@@ -35,6 +35,10 @@ namespace RecipeBook
                 {
                     recipe = DelishRecipeScraper.Instance.ScrapeRecipe(url);
                 }
+                else if (url.Contains("wprm_print"))
+                {
+                    recipe = WPRMRecipeScraper.Instance.ScrapeRecipe(url);
+                }
             }
             UpdateRecipeTextBox(recipe);
         }
