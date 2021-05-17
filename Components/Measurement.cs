@@ -1,4 +1,4 @@
-﻿namespace RecipeBook
+﻿namespace Components
 {
     public enum Measurement
     {

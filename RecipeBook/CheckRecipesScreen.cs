@@ -2,6 +2,7 @@
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
+using Components;
 
 namespace RecipeBook
 {
@@ -11,15 +12,15 @@ namespace RecipeBook
         public CheckRecipesScreen(int recipeIndex)
         {
             InitializeComponent();
-            this.recipe = Recipe.Recipes[recipeIndex];
-            this.recipe.SetRecipeInRichTextBox(this.richTextBoxRecipe);
+            recipe = Recipe.Recipes[recipeIndex];
+            IShowRecipeScreen.SetRecipeInRichTextBox(richTextBoxRecipe, recipe);
         }
 
         private void buttonBack_Click(object sender, EventArgs e)
         {
-            (this.Parent as Form1).Controls.OfType<ManageRecipesScreen>().ToList()[0].Visible = true;
-            (this.Parent as Form1).ActiveControl = (this.Parent as Form1).Controls.OfType<ManageRecipesScreen>().ToList()[0];
-            this.Dispose();
+            (Parent as Form1).Controls.OfType<ManageRecipesScreen>().ToList()[0].Visible = true;
+            (Parent as Form1).ActiveControl = (Parent as Form1).Controls.OfType<ManageRecipesScreen>().ToList()[0];
+            Dispose();
         }
 
         private void ColorButtonUncolorOthers(Button button)
@@ -28,7 +29,7 @@ namespace RecipeBook
             button.BackColor = Color.FromArgb(255, 69, 255, 49);
             button.FlatAppearance.MouseOverBackColor = button.BackColor;
             button.FlatAppearance.MouseDownBackColor = button.BackColor;
-            foreach (var control in this.Controls.OfType<Button>().Where(x => x != button && x != this.buttonBack).ToList())
+            foreach (var control in Controls.OfType<Button>().Where(x => x != button && x != buttonBack).ToList())
             {
                 control.BackColor = Color.FromArgb(255, 0, 40, 7);
                 control.FlatAppearance.MouseOverBackColor = control.BackColor;
@@ -39,37 +40,37 @@ namespace RecipeBook
 
         private void buttonScaleQuarter_Click(object sender, EventArgs e)
         {
-            ColorButtonUncolorOthers(this.buttonScaleQuarter);
-            this.recipe.Scale(0.25);
-            this.recipe.SetRecipeInRichTextBox(this.richTextBoxRecipe);
+            ColorButtonUncolorOthers(buttonScaleQuarter);
+            recipe.Scale(0.25);
+            IShowRecipeScreen.SetRecipeInRichTextBox(richTextBoxRecipe, recipe);
         }
 
         private void buttonScaleHalf_Click(object sender, EventArgs e)
         {
-            ColorButtonUncolorOthers(this.buttonScaleHalf);
-            this.recipe.Scale(0.5);
-            this.recipe.SetRecipeInRichTextBox(this.richTextBoxRecipe);
+            ColorButtonUncolorOthers(buttonScaleHalf);
+            recipe.Scale(0.5);
+            IShowRecipeScreen.SetRecipeInRichTextBox(richTextBoxRecipe, recipe);
         }
 
         private void buttonScaleOne_Click(object sender, EventArgs e)
         {
-            ColorButtonUncolorOthers(this.buttonScaleOne);
-            this.recipe.Scale(1);
-            this.recipe.SetRecipeInRichTextBox(this.richTextBoxRecipe);
+            ColorButtonUncolorOthers(buttonScaleOne);
+            recipe.Scale(1);
+            IShowRecipeScreen.SetRecipeInRichTextBox(richTextBoxRecipe, recipe);
         }
 
         private void buttonScaleDouble_Click(object sender, EventArgs e)
         {
-            ColorButtonUncolorOthers(this.buttonScaleDouble);
-            this.recipe.Scale(2);
-            this.recipe.SetRecipeInRichTextBox(this.richTextBoxRecipe);
+            ColorButtonUncolorOthers(buttonScaleDouble);
+            recipe.Scale(2);
+            IShowRecipeScreen.SetRecipeInRichTextBox(richTextBoxRecipe, recipe);
         }
 
         private void buttonScaleTriple_Click(object sender, EventArgs e)
         {
-            ColorButtonUncolorOthers(this.buttonScaleTriple);
-            this.recipe.Scale(3);
-            this.recipe.SetRecipeInRichTextBox(this.richTextBoxRecipe);
+            ColorButtonUncolorOthers(buttonScaleTriple);
+            recipe.Scale(3);
+            IShowRecipeScreen.SetRecipeInRichTextBox(richTextBoxRecipe, recipe);
         }
     }
 }

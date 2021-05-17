@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Windows.Forms;
+using Components;
 
 namespace RecipeBook
 {
@@ -9,9 +10,9 @@ namespace RecipeBook
         public ManageRecipesScreen()
         {
             InitializeComponent();
-            foreach (Recipe recipe in Recipe.Recipes)
+            foreach (var recipe in Recipe.Recipes)
             {
-                this.listBoxRecipes.Items.Add(recipe.Name);
+                listBoxRecipes.Items.Add(recipe.Name);
             }
         }
 
@@ -19,12 +20,12 @@ namespace RecipeBook
         {
             if (Keys.Delete == e.KeyCode)
             {
-                for (int index = 0; index < this.listBoxRecipes.Items.Count; index++)
+                for (var index = 0; index < listBoxRecipes.Items.Count; index++)
                 {
-                    if (this.listBoxRecipes.GetSelected(index))
+                    if (listBoxRecipes.GetSelected(index))
                     {
                         Recipe.Recipes.RemoveAt(index);
-                        this.listBoxRecipes.Items.RemoveAt(index);
+                        listBoxRecipes.Items.RemoveAt(index);
                         index--;
                     }
                 }
@@ -34,20 +35,20 @@ namespace RecipeBook
         private void listBoxRecipes_MouseDoubleClick(object sender, MouseEventArgs e)
         {
 
-            this.Hide();
-            CheckRecipesScreen aux = new CheckRecipesScreen(this.listBoxRecipes.SelectedIndex)
+            Hide();
+            var aux = new CheckRecipesScreen(listBoxRecipes.SelectedIndex)
             {
                 Dock = DockStyle.Fill
             };
-            (this.Parent as Form1).Controls.Add(aux);
-            (this.Parent as Form1).ActiveControl = aux;
+            (Parent as Form1).Controls.Add(aux);
+            (Parent as Form1).ActiveControl = aux;
         }
 
         private void buttonBack_Click(object sender, EventArgs e)
         {
-            (this.Parent as Form1).Controls.OfType<HomeScreen>().ToList()[0].Visible = true;
-            (this.Parent as Form1).ActiveControl = (this.Parent as Form1).Controls.OfType<HomeScreen>().ToList()[0];
-            this.Dispose();
+            (Parent as Form1).Controls.OfType<HomeScreen>().ToList()[0].Visible = true;
+            (Parent as Form1).ActiveControl = (Parent as Form1).Controls.OfType<HomeScreen>().ToList()[0];
+            Dispose();
         }
     }
 }

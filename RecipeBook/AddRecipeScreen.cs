@@ -1,53 +1,60 @@
 ﻿using System;
 using System.Linq;
 using System.Windows.Forms;
+using Components;
+using Components.RecipeScrapers;
 
 namespace RecipeBook
 {
-    public partial class AddRecipeScreen : UserControl
+    public partial class AddRecipeScreen : UserControl, IShowRecipeScreen
     {
         private string[] _baseRecipeText;
         public AddRecipeScreen()
         {
             InitializeComponent();
-            this._baseRecipeText = this.richTextBoxRecipe.Lines;
+            _baseRecipeText = richTextBoxRecipe.Lines;
         }
 
         private void GetRecipe(string url)
         {
             Recipe recipe = null;
-            foreach (Recipe item in Recipe.Recipes)
+            foreach (var item in Recipe.Recipes)
             {
                 if (item.URL == url)
                 {
                     recipe = item;
                 }
             }
-            if (recipe == null) { 
-            if (url.Contains("gimmesomeoven") || url.Contains("pinchofyum"))
+            if (recipe == null)
             {
-                recipe = new TastyRecipeScraper().ScrapeRecipe(url);
-            }
+                if (url.Contains("gimmesomeoven") || url.Contains("pinchofyum"))
+                {
+                    recipe = TastyRecipeScraper.Instance.ScrapeRecipe(url);
+                }
+                else if (url.Contains("delish"))
+                {
+                    recipe = DelishRecipeScraper.Instance.ScrapeRecipe(url);
+                }
             }
             UpdateRecipeTextBox(recipe);
         }
 
         private void UpdateRecipeTextBox(Recipe recipe)
         {
-            this.richTextBoxRecipe.Lines = this._baseRecipeText;
-            recipe.SetRecipeInRichTextBox(this.richTextBoxRecipe);
+            richTextBoxRecipe.Lines = _baseRecipeText;
+            IShowRecipeScreen.SetRecipeInRichTextBox(richTextBoxRecipe, recipe);
 
         }
         private void buttonSubmitURL_Click(object sender, EventArgs e)
         {
-            GetRecipe(this.textBoxURL.Text);
+            GetRecipe(textBoxURL.Text);
         }
 
         private void buttonBack_Click(object sender, EventArgs e)
         {
-            (this.Parent as Form1).Controls.OfType<HomeScreen>().ToList()[0].Visible = true;
-            (this.Parent as Form1).ActiveControl = (this.Parent as Form1).Controls.OfType<HomeScreen>().ToList()[0];
-            this.Dispose();
+            (Parent as Form1).Controls.OfType<HomeScreen>().ToList()[0].Visible = true;
+            (Parent as Form1).ActiveControl = (Parent as Form1).Controls.OfType<HomeScreen>().ToList()[0];
+            Dispose();
         }
     }
 }

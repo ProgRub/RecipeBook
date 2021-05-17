@@ -1,4 +1,4 @@
-﻿namespace RecipeBook
+﻿namespace Components
 {
     public interface IMeasure
     {

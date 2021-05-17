@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace RecipeBook
+namespace Components
 {
     public interface IConverter
     {

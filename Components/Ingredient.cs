@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace RecipeBook
+namespace Components
 {
     public class Ingredient : IMeasure, IConverter
     {
@@ -10,9 +10,9 @@ namespace RecipeBook
 
         public Ingredient(double quantity, string name, Measurement measurement)
         {
-            this._quantity = quantity;
-            this._name = name;
-            this._measurement = measurement;
+            _quantity = quantity;
+            _name = name;
+            _measurement = measurement;
         }
 
         public string Name
