@@ -29,6 +29,7 @@ namespace Forms
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Window));
 			this.homeScreen1 = new Forms.HomeScreen();
 			this.SuspendLayout();
 			// 
@@ -56,6 +57,7 @@ namespace Forms
 			this.Controls.Add(this.homeScreen1);
 			this.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
 			this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Name = "Window";
 			this.Text = "RecipeBook";
 			this.ResumeLayout(false);
