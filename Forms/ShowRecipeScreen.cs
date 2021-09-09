@@ -23,6 +23,11 @@ namespace Forms
 			InitializeComponent();
 		}
 
+		private void ShowRecipeScreen_Enter(object sender, EventArgs e)
+		{
+			MaximizeWindow();
+		}
+
 		protected void SetRecipeInRichTextBox(RecipeDTO recipe)
 		{
 			var list = new List<string>
@@ -93,7 +98,7 @@ namespace Forms
 			}
 		}
 
-		private void SetSelectedScaleButtonColor(Button selectedButton)
+		private void SetSelectedScaleButtonColor(ButtonBase selectedButton)
 		{
 			selectedButton.BackColor = Color.Lime;
 			selectedButton.FlatAppearance.MouseDownBackColor = Color.Lime;
@@ -163,9 +168,9 @@ namespace Forms
 				ButtonCupToTeaSpoon.Text == "Cup -> Tsp." ? "Tsp. -> Cup" : "Cup -> Tsp.";
 		}
 
-		private void ShowRecipeScreen_Enter(object sender, EventArgs e)
+		private void ButtonResetConversions_Click(object sender, EventArgs e)
 		{
-			MaximizeWindow();
+			SetRecipeInRichTextBox(RecipeToShow);
 		}
 	}
 }

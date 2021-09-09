@@ -22,7 +22,7 @@ namespace Services.IndividualServices
 			{ConversionType.Cup_To_TableSpoon, 16},
 			{ConversionType.Cup_To_TeaSpoon, 48},
 			{ConversionType.Cup_To_FluidOunce, 8},
-			{ConversionType.Gallon_To_Quarts, 4},
+			{ConversionType.Gallon_To_Quart, 4},
 			{ConversionType.Quart_To_Pint, 2},
 			{ConversionType.Pint_To_Cup, 2},
 			{ConversionType.Celsius_To_Fahrenheit, 33.8},
