@@ -21,7 +21,7 @@ namespace Forms
 		private void CheckRecipeScreen_Enter(object sender, EventArgs e)
 		{
 			RecipeToShow = ServicesFacade.Instance.GetSelectedRecipe();
-			SetRecipeInRichTextBox(RecipeToShow);
+			WriteRecipeInRichTextBox(RecipeToShow);
 		}
 	}
 }

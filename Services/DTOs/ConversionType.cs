@@ -6,7 +6,7 @@
 		Cup_To_TableSpoon,
 		Cup_To_TeaSpoon,
 		Cup_To_FluidOunce,
-		Gallon_To_Quarts,
+		Gallon_To_Quart,
 		Quart_To_Pint,
 		Pint_To_Cup,
 		Celsius_To_Fahrenheit,
