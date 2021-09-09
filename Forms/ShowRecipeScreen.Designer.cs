@@ -246,6 +246,7 @@ namespace Forms
 			this.ButtonQuartToPint.TabIndex = 21;
 			this.ButtonQuartToPint.Text = "Quart -> Pint";
 			this.ButtonQuartToPint.UseVisualStyleBackColor = true;
+			this.ButtonQuartToPint.Click += new System.EventHandler(this.ButtonQuartToPint_Click);
 			// 
 			// ButtonGallonToQuart
 			// 
@@ -261,6 +262,7 @@ namespace Forms
 			this.ButtonGallonToQuart.TabIndex = 20;
 			this.ButtonGallonToQuart.Text = "Gallon -> Quart";
 			this.ButtonGallonToQuart.UseVisualStyleBackColor = true;
+			this.ButtonGallonToQuart.Click += new System.EventHandler(this.ButtonGallonToQuart_Click);
 			// 
 			// ButtonCupToFluidOunce
 			// 
@@ -276,6 +278,7 @@ namespace Forms
 			this.ButtonCupToFluidOunce.TabIndex = 19;
 			this.ButtonCupToFluidOunce.Text = "Cup -> Fluid Oz.";
 			this.ButtonCupToFluidOunce.UseVisualStyleBackColor = true;
+			this.ButtonCupToFluidOunce.Click += new System.EventHandler(this.ButtonCupToFluidOunce_Click);
 			// 
 			// ButtonOunceToGram
 			// 
@@ -291,6 +294,7 @@ namespace Forms
 			this.ButtonOunceToGram.TabIndex = 24;
 			this.ButtonOunceToGram.Text = "Oz. -> Gram";
 			this.ButtonOunceToGram.UseVisualStyleBackColor = true;
+			this.ButtonOunceToGram.Click += new System.EventHandler(this.ButtonOunceToGram_Click);
 			// 
 			// ButtonCelsiusToFahrenheit
 			// 
@@ -306,6 +310,7 @@ namespace Forms
 			this.ButtonCelsiusToFahrenheit.TabIndex = 23;
 			this.ButtonCelsiusToFahrenheit.Text = "Celsius -> Fahrenheit";
 			this.ButtonCelsiusToFahrenheit.UseVisualStyleBackColor = true;
+			this.ButtonCelsiusToFahrenheit.Click += new System.EventHandler(this.ButtonCelsiusToFahrenheit_Click);
 			// 
 			// ButtonPintToCup
 			// 
@@ -321,6 +326,7 @@ namespace Forms
 			this.ButtonPintToCup.TabIndex = 22;
 			this.ButtonPintToCup.Text = "Pint -> Cup";
 			this.ButtonPintToCup.UseVisualStyleBackColor = true;
+			this.ButtonPintToCup.Click += new System.EventHandler(this.ButtonPintToCup_Click);
 			// 
 			// ButtonTableSpoonToMilliLiter
 			// 
@@ -336,6 +342,7 @@ namespace Forms
 			this.ButtonTableSpoonToMilliLiter.TabIndex = 27;
 			this.ButtonTableSpoonToMilliLiter.Text = "Tbsp. -> mL";
 			this.ButtonTableSpoonToMilliLiter.UseVisualStyleBackColor = true;
+			this.ButtonTableSpoonToMilliLiter.Click += new System.EventHandler(this.ButtonTableSpoonToMilliLiter_Click);
 			// 
 			// ButtonTeaSpoonToMilliLitter
 			// 
@@ -351,6 +358,7 @@ namespace Forms
 			this.ButtonTeaSpoonToMilliLitter.TabIndex = 26;
 			this.ButtonTeaSpoonToMilliLitter.Text = "Tsp. -> mL";
 			this.ButtonTeaSpoonToMilliLitter.UseVisualStyleBackColor = true;
+			this.ButtonTeaSpoonToMilliLitter.Click += new System.EventHandler(this.ButtonTeaSpoonToMilliLitter_Click);
 			// 
 			// ButtonKgToGram
 			// 
@@ -366,6 +374,7 @@ namespace Forms
 			this.ButtonKgToGram.TabIndex = 25;
 			this.ButtonKgToGram.Text = "Kg. -> Gram";
 			this.ButtonKgToGram.UseVisualStyleBackColor = true;
+			this.ButtonKgToGram.Click += new System.EventHandler(this.ButtonKgToGram_Click);
 			// 
 			// ButtonGallonToLiter
 			// 
@@ -381,6 +390,7 @@ namespace Forms
 			this.ButtonGallonToLiter.TabIndex = 30;
 			this.ButtonGallonToLiter.Text = "Gallon -> Liter";
 			this.ButtonGallonToLiter.UseVisualStyleBackColor = true;
+			this.ButtonGallonToLiter.Click += new System.EventHandler(this.ButtonGallonToLiter_Click);
 			// 
 			// ButtonPoundToGram
 			// 
@@ -396,6 +406,7 @@ namespace Forms
 			this.ButtonPoundToGram.TabIndex = 29;
 			this.ButtonPoundToGram.Text = "Pound -> Gram";
 			this.ButtonPoundToGram.UseVisualStyleBackColor = true;
+			this.ButtonPoundToGram.Click += new System.EventHandler(this.ButtonPoundToGram_Click);
 			// 
 			// ButtonCupToMilliLiter
 			// 
@@ -411,6 +422,7 @@ namespace Forms
 			this.ButtonCupToMilliLiter.TabIndex = 28;
 			this.ButtonCupToMilliLiter.Text = "Cup -> mL";
 			this.ButtonCupToMilliLiter.UseVisualStyleBackColor = true;
+			this.ButtonCupToMilliLiter.Click += new System.EventHandler(this.ButtonCupToMilliLiter_Click);
 			// 
 			// ShowRecipeScreen
 			// 

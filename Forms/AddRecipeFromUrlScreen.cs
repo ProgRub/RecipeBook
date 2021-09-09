@@ -22,7 +22,7 @@ namespace Forms
 		{
 			var recipe = ServicesFacade.GetRecipe(TextBoxRecipeUrl.Text);
 			RecipeToShow = recipe;
-			SetRecipeInRichTextBox(RecipeToShow);
+			WriteRecipeInRichTextBox(RecipeToShow);
 		}
 	}
 }
