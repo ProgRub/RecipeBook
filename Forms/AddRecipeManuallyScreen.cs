@@ -16,5 +16,30 @@ namespace Forms
 		{
 			InitializeComponent();
 		}
+
+		private void ButtonUndo_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void ButtonRedo_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void ButtonAddIngredient_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void ButtonSaveRecipe_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void AddRecipeManuallyScreen_Enter(object sender, EventArgs e)
+		{
+			MaximizeWindow();
+		}
 	}
 }
