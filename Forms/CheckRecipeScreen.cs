@@ -22,6 +22,7 @@ namespace Forms
 		{
 			RecipeToShow = ServicesFacade.Instance.GetSelectedRecipe();
 			WriteRecipeInRichTextBox(RecipeToShow);
+			tableLayoutPanelMain.Dock = DockStyle.Fill;
 		}
 	}
 }

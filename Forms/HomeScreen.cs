@@ -31,5 +31,10 @@ namespace Forms
 		{
 			MoveToScreen(new ManageRecipesScreen(), this);
 		}
+
+		private void HomeScreen_Enter(object sender, EventArgs e)
+		{
+			SetWindowMinimumSizeBasedOnTableLayout(tableLayoutPanelMain,false);
+		}
 	}
 }

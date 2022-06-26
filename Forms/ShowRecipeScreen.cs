@@ -43,7 +43,7 @@ namespace Forms
 
 		private void ShowRecipeScreen_Enter(object sender, EventArgs e)
 		{
-			MaximizeWindow();
+			SetWindowMinimumSizeBasedOnTableLayout(tableLayoutPanelMain,true);
 		}
 
 		protected void WriteRecipeInRichTextBox(RecipeDTO recipe)
