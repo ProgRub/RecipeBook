@@ -29,8 +29,23 @@ namespace Forms
 		/// </summary>
 		private void InitializeComponent()
 		{
-			components = new System.ComponentModel.Container();
+			this.SuspendLayout();
+			// 
+			// ButtonBack
+			// 
+			this.ButtonBack.FlatAppearance.BorderSize = 0;
+			this.ButtonBack.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+			this.ButtonBack.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+			// 
+			// AddRecipeManuallyScreen
+			// 
+			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.Name = "AddRecipeManuallyScreen";
+			this.Size = new System.Drawing.Size(1436, 764);
+			this.ResumeLayout(false);
+			this.PerformLayout();
+
 		}
 
 		#endregion
