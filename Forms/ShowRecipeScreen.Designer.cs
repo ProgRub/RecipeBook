@@ -467,7 +467,6 @@ namespace Forms
 			this.tableLayoutPanelMain.Controls.Add(this.ButtonGallonToQuart, 2, 12);
 			this.tableLayoutPanelMain.Controls.Add(this.ButtonCupToTeaSpoon, 2, 10);
 			this.tableLayoutPanelMain.Controls.Add(this.ButtonCupToFluidOunce, 2, 11);
-			this.tableLayoutPanelMain.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.tableLayoutPanelMain.Location = new System.Drawing.Point(0, 0);
 			this.tableLayoutPanelMain.MinimumSize = new System.Drawing.Size(1334, 721);
 			this.tableLayoutPanelMain.Name = "tableLayoutPanelMain";
@@ -504,7 +503,7 @@ namespace Forms
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.Controls.Add(this.tableLayoutPanelMain);
 			this.Name = "ShowRecipeScreen";
-			this.Size = new System.Drawing.Size(1334, 721);
+			this.Size = new System.Drawing.Size(1337, 724);
 			this.Enter += new System.EventHandler(this.ShowRecipeScreen_Enter);
 			this.Controls.SetChildIndex(this.tableLayoutPanelMain, 0);
 			this.Controls.SetChildIndex(this.ButtonBack, 0);
@@ -541,6 +540,6 @@ namespace Forms
 		private System.Windows.Forms.Button ButtonGallonToLiter;
 		private System.Windows.Forms.Button ButtonPoundToGram;
 		private System.Windows.Forms.Button ButtonCupToMilliLiter;
-		private System.Windows.Forms.TableLayoutPanel tableLayoutPanelMain;
+		protected System.Windows.Forms.TableLayoutPanel tableLayoutPanelMain;
 	}
 }
