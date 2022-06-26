@@ -1,13 +1,10 @@
-﻿using HtmlAgilityPack;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using System.Net;
 using Database.Entities;
-using Services.Scrapers;
 
-namespace Components.RecipeScrapers
+namespace Services.Scrapers
 {
     public class TastyRecipeScraper : RecipeScraper
     {

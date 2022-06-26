@@ -12,4 +12,8 @@
     <PackageReference Include="HtmlAgilityPack" Version="1.11.36" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Commands\AddRecipeManually\" />
+  </ItemGroup>
+
 </Project>
