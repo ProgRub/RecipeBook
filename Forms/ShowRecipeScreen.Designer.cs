@@ -53,6 +53,8 @@ namespace Forms
 			this.ButtonGallonToLiter = new System.Windows.Forms.Button();
 			this.ButtonPoundToGram = new System.Windows.Forms.Button();
 			this.ButtonCupToMilliLiter = new System.Windows.Forms.Button();
+			this.tableLayoutPanelMain = new System.Windows.Forms.TableLayoutPanel();
+			this.tableLayoutPanelMain.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// ButtonBack
@@ -65,32 +67,37 @@ namespace Forms
 			// 
 			this.RichTextBoxRecipeInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
 			this.RichTextBoxRecipeInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.RichTextBoxRecipeInfo.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.RichTextBoxRecipeInfo.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
 			this.RichTextBoxRecipeInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-			this.RichTextBoxRecipeInfo.Location = new System.Drawing.Point(62, 7);
+			this.RichTextBoxRecipeInfo.Location = new System.Drawing.Point(63, 3);
 			this.RichTextBoxRecipeInfo.Name = "RichTextBoxRecipeInfo";
 			this.RichTextBoxRecipeInfo.ReadOnly = true;
-			this.RichTextBoxRecipeInfo.Size = new System.Drawing.Size(1566, 924);
+			this.tableLayoutPanelMain.SetRowSpan(this.RichTextBoxRecipeInfo, 23);
+			this.RichTextBoxRecipeInfo.Size = new System.Drawing.Size(1076, 715);
 			this.RichTextBoxRecipeInfo.TabIndex = 7;
 			this.RichTextBoxRecipeInfo.Text = "Name:\nURL:\nPrep Time:\nCook Time:\nYield:\nIngredients:\nInstructions:\nNotes:";
 			// 
 			// LabelScale
 			// 
+			this.LabelScale.Anchor = System.Windows.Forms.AnchorStyles.Left;
 			this.LabelScale.AutoSize = true;
-			this.LabelScale.Location = new System.Drawing.Point(1652, 9);
+			this.LabelScale.Location = new System.Drawing.Point(1145, 6);
 			this.LabelScale.Name = "LabelScale";
 			this.LabelScale.Size = new System.Drawing.Size(54, 17);
 			this.LabelScale.TabIndex = 8;
 			this.LabelScale.Text = "Scale:";
+			this.LabelScale.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// ButtonQuarterScale
 			// 
+			this.ButtonQuarterScale.Anchor = System.Windows.Forms.AnchorStyles.Left;
 			this.ButtonQuarterScale.FlatAppearance.BorderSize = 0;
 			this.ButtonQuarterScale.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
 			this.ButtonQuarterScale.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
 			this.ButtonQuarterScale.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.ButtonQuarterScale.ForeColor = System.Drawing.Color.Lime;
-			this.ButtonQuarterScale.Location = new System.Drawing.Point(1643, 40);
+			this.ButtonQuarterScale.Location = new System.Drawing.Point(1145, 34);
 			this.ButtonQuarterScale.Name = "ButtonQuarterScale";
 			this.ButtonQuarterScale.Size = new System.Drawing.Size(75, 23);
 			this.ButtonQuarterScale.TabIndex = 9;
@@ -100,12 +107,13 @@ namespace Forms
 			// 
 			// ButtonHalfScale
 			// 
+			this.ButtonHalfScale.Anchor = System.Windows.Forms.AnchorStyles.Left;
 			this.ButtonHalfScale.FlatAppearance.BorderSize = 0;
 			this.ButtonHalfScale.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
 			this.ButtonHalfScale.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
 			this.ButtonHalfScale.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.ButtonHalfScale.ForeColor = System.Drawing.Color.Lime;
-			this.ButtonHalfScale.Location = new System.Drawing.Point(1643, 69);
+			this.ButtonHalfScale.Location = new System.Drawing.Point(1145, 65);
 			this.ButtonHalfScale.Name = "ButtonHalfScale";
 			this.ButtonHalfScale.Size = new System.Drawing.Size(75, 23);
 			this.ButtonHalfScale.TabIndex = 10;
@@ -115,13 +123,14 @@ namespace Forms
 			// 
 			// ButtonOneScale
 			// 
+			this.ButtonOneScale.Anchor = System.Windows.Forms.AnchorStyles.Left;
 			this.ButtonOneScale.BackColor = System.Drawing.Color.Lime;
 			this.ButtonOneScale.FlatAppearance.BorderSize = 0;
 			this.ButtonOneScale.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
 			this.ButtonOneScale.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
 			this.ButtonOneScale.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.ButtonOneScale.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(32)))), ((int)(((byte)(0)))));
-			this.ButtonOneScale.Location = new System.Drawing.Point(1643, 98);
+			this.ButtonOneScale.Location = new System.Drawing.Point(1145, 96);
 			this.ButtonOneScale.Name = "ButtonOneScale";
 			this.ButtonOneScale.Size = new System.Drawing.Size(75, 23);
 			this.ButtonOneScale.TabIndex = 11;
@@ -131,12 +140,13 @@ namespace Forms
 			// 
 			// ButtonDoubleScale
 			// 
+			this.ButtonDoubleScale.Anchor = System.Windows.Forms.AnchorStyles.Left;
 			this.ButtonDoubleScale.FlatAppearance.BorderSize = 0;
 			this.ButtonDoubleScale.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
 			this.ButtonDoubleScale.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
 			this.ButtonDoubleScale.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.ButtonDoubleScale.ForeColor = System.Drawing.Color.Lime;
-			this.ButtonDoubleScale.Location = new System.Drawing.Point(1643, 127);
+			this.ButtonDoubleScale.Location = new System.Drawing.Point(1145, 127);
 			this.ButtonDoubleScale.Name = "ButtonDoubleScale";
 			this.ButtonDoubleScale.Size = new System.Drawing.Size(75, 23);
 			this.ButtonDoubleScale.TabIndex = 12;
@@ -146,12 +156,13 @@ namespace Forms
 			// 
 			// ButtonQuadrupleScale
 			// 
+			this.ButtonQuadrupleScale.Anchor = System.Windows.Forms.AnchorStyles.Left;
 			this.ButtonQuadrupleScale.FlatAppearance.BorderSize = 0;
 			this.ButtonQuadrupleScale.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
 			this.ButtonQuadrupleScale.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
 			this.ButtonQuadrupleScale.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.ButtonQuadrupleScale.ForeColor = System.Drawing.Color.Lime;
-			this.ButtonQuadrupleScale.Location = new System.Drawing.Point(1643, 156);
+			this.ButtonQuadrupleScale.Location = new System.Drawing.Point(1145, 158);
 			this.ButtonQuadrupleScale.Name = "ButtonQuadrupleScale";
 			this.ButtonQuadrupleScale.Size = new System.Drawing.Size(75, 23);
 			this.ButtonQuadrupleScale.TabIndex = 13;
@@ -161,24 +172,26 @@ namespace Forms
 			// 
 			// LabelConversions
 			// 
+			this.LabelConversions.Anchor = System.Windows.Forms.AnchorStyles.Left;
 			this.LabelConversions.AutoSize = true;
-			this.LabelConversions.Location = new System.Drawing.Point(1652, 205);
+			this.LabelConversions.Location = new System.Drawing.Point(1145, 192);
 			this.LabelConversions.Name = "LabelConversions";
 			this.LabelConversions.Size = new System.Drawing.Size(110, 17);
 			this.LabelConversions.TabIndex = 14;
 			this.LabelConversions.Text = "Conversions:";
+			this.LabelConversions.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// ButtonTableSpoonToTeaSpoon
 			// 
-			this.ButtonTableSpoonToTeaSpoon.AutoSize = true;
+			this.ButtonTableSpoonToTeaSpoon.Anchor = System.Windows.Forms.AnchorStyles.Left;
 			this.ButtonTableSpoonToTeaSpoon.FlatAppearance.BorderSize = 0;
 			this.ButtonTableSpoonToTeaSpoon.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
 			this.ButtonTableSpoonToTeaSpoon.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
 			this.ButtonTableSpoonToTeaSpoon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.ButtonTableSpoonToTeaSpoon.ForeColor = System.Drawing.Color.Lime;
-			this.ButtonTableSpoonToTeaSpoon.Location = new System.Drawing.Point(1639, 267);
+			this.ButtonTableSpoonToTeaSpoon.Location = new System.Drawing.Point(1145, 250);
 			this.ButtonTableSpoonToTeaSpoon.Name = "ButtonTableSpoonToTeaSpoon";
-			this.ButtonTableSpoonToTeaSpoon.Size = new System.Drawing.Size(123, 27);
+			this.ButtonTableSpoonToTeaSpoon.Size = new System.Drawing.Size(123, 25);
 			this.ButtonTableSpoonToTeaSpoon.TabIndex = 15;
 			this.ButtonTableSpoonToTeaSpoon.Text = "Tbsp. -> Tsp.";
 			this.ButtonTableSpoonToTeaSpoon.UseVisualStyleBackColor = true;
@@ -186,15 +199,15 @@ namespace Forms
 			// 
 			// ButtonCupToTableSpoon
 			// 
-			this.ButtonCupToTableSpoon.AutoSize = true;
+			this.ButtonCupToTableSpoon.Anchor = System.Windows.Forms.AnchorStyles.Left;
 			this.ButtonCupToTableSpoon.FlatAppearance.BorderSize = 0;
 			this.ButtonCupToTableSpoon.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
 			this.ButtonCupToTableSpoon.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
 			this.ButtonCupToTableSpoon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.ButtonCupToTableSpoon.ForeColor = System.Drawing.Color.Lime;
-			this.ButtonCupToTableSpoon.Location = new System.Drawing.Point(1639, 300);
+			this.ButtonCupToTableSpoon.Location = new System.Drawing.Point(1145, 281);
 			this.ButtonCupToTableSpoon.Name = "ButtonCupToTableSpoon";
-			this.ButtonCupToTableSpoon.Size = new System.Drawing.Size(126, 27);
+			this.ButtonCupToTableSpoon.Size = new System.Drawing.Size(126, 25);
 			this.ButtonCupToTableSpoon.TabIndex = 16;
 			this.ButtonCupToTableSpoon.Text = "Cup -> Tbsp.";
 			this.ButtonCupToTableSpoon.UseVisualStyleBackColor = true;
@@ -202,15 +215,15 @@ namespace Forms
 			// 
 			// ButtonCupToTeaSpoon
 			// 
-			this.ButtonCupToTeaSpoon.AutoSize = true;
+			this.ButtonCupToTeaSpoon.Anchor = System.Windows.Forms.AnchorStyles.Left;
 			this.ButtonCupToTeaSpoon.FlatAppearance.BorderSize = 0;
 			this.ButtonCupToTeaSpoon.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
 			this.ButtonCupToTeaSpoon.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
 			this.ButtonCupToTeaSpoon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.ButtonCupToTeaSpoon.ForeColor = System.Drawing.Color.Lime;
-			this.ButtonCupToTeaSpoon.Location = new System.Drawing.Point(1633, 333);
+			this.ButtonCupToTeaSpoon.Location = new System.Drawing.Point(1145, 312);
 			this.ButtonCupToTeaSpoon.Name = "ButtonCupToTeaSpoon";
-			this.ButtonCupToTeaSpoon.Size = new System.Drawing.Size(126, 27);
+			this.ButtonCupToTeaSpoon.Size = new System.Drawing.Size(126, 25);
 			this.ButtonCupToTeaSpoon.TabIndex = 17;
 			this.ButtonCupToTeaSpoon.Text = "Cup -> Tsp.";
 			this.ButtonCupToTeaSpoon.UseVisualStyleBackColor = true;
@@ -218,15 +231,15 @@ namespace Forms
 			// 
 			// ButtonResetConversions
 			// 
-			this.ButtonResetConversions.AutoSize = true;
+			this.ButtonResetConversions.Anchor = System.Windows.Forms.AnchorStyles.Left;
 			this.ButtonResetConversions.FlatAppearance.BorderSize = 0;
 			this.ButtonResetConversions.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
 			this.ButtonResetConversions.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
 			this.ButtonResetConversions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.ButtonResetConversions.ForeColor = System.Drawing.Color.Lime;
-			this.ButtonResetConversions.Location = new System.Drawing.Point(1639, 234);
+			this.ButtonResetConversions.Location = new System.Drawing.Point(1145, 219);
 			this.ButtonResetConversions.Name = "ButtonResetConversions";
-			this.ButtonResetConversions.Size = new System.Drawing.Size(162, 27);
+			this.ButtonResetConversions.Size = new System.Drawing.Size(162, 25);
 			this.ButtonResetConversions.TabIndex = 18;
 			this.ButtonResetConversions.Text = "Reset Conversions";
 			this.ButtonResetConversions.UseVisualStyleBackColor = true;
@@ -234,15 +247,15 @@ namespace Forms
 			// 
 			// ButtonQuartToPint
 			// 
-			this.ButtonQuartToPint.AutoSize = true;
+			this.ButtonQuartToPint.Anchor = System.Windows.Forms.AnchorStyles.Left;
 			this.ButtonQuartToPint.FlatAppearance.BorderSize = 0;
 			this.ButtonQuartToPint.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
 			this.ButtonQuartToPint.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
 			this.ButtonQuartToPint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.ButtonQuartToPint.ForeColor = System.Drawing.Color.Lime;
-			this.ButtonQuartToPint.Location = new System.Drawing.Point(1642, 432);
+			this.ButtonQuartToPint.Location = new System.Drawing.Point(1145, 405);
 			this.ButtonQuartToPint.Name = "ButtonQuartToPint";
-			this.ButtonQuartToPint.Size = new System.Drawing.Size(126, 27);
+			this.ButtonQuartToPint.Size = new System.Drawing.Size(126, 25);
 			this.ButtonQuartToPint.TabIndex = 21;
 			this.ButtonQuartToPint.Text = "Quart -> Pint";
 			this.ButtonQuartToPint.UseVisualStyleBackColor = true;
@@ -250,15 +263,15 @@ namespace Forms
 			// 
 			// ButtonGallonToQuart
 			// 
-			this.ButtonGallonToQuart.AutoSize = true;
+			this.ButtonGallonToQuart.Anchor = System.Windows.Forms.AnchorStyles.Left;
 			this.ButtonGallonToQuart.FlatAppearance.BorderSize = 0;
 			this.ButtonGallonToQuart.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
 			this.ButtonGallonToQuart.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
 			this.ButtonGallonToQuart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.ButtonGallonToQuart.ForeColor = System.Drawing.Color.Lime;
-			this.ButtonGallonToQuart.Location = new System.Drawing.Point(1639, 399);
+			this.ButtonGallonToQuart.Location = new System.Drawing.Point(1145, 374);
 			this.ButtonGallonToQuart.Name = "ButtonGallonToQuart";
-			this.ButtonGallonToQuart.Size = new System.Drawing.Size(147, 27);
+			this.ButtonGallonToQuart.Size = new System.Drawing.Size(147, 25);
 			this.ButtonGallonToQuart.TabIndex = 20;
 			this.ButtonGallonToQuart.Text = "Gallon -> Quart";
 			this.ButtonGallonToQuart.UseVisualStyleBackColor = true;
@@ -266,15 +279,15 @@ namespace Forms
 			// 
 			// ButtonCupToFluidOunce
 			// 
-			this.ButtonCupToFluidOunce.AutoSize = true;
+			this.ButtonCupToFluidOunce.Anchor = System.Windows.Forms.AnchorStyles.Left;
 			this.ButtonCupToFluidOunce.FlatAppearance.BorderSize = 0;
 			this.ButtonCupToFluidOunce.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
 			this.ButtonCupToFluidOunce.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
 			this.ButtonCupToFluidOunce.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.ButtonCupToFluidOunce.ForeColor = System.Drawing.Color.Lime;
-			this.ButtonCupToFluidOunce.Location = new System.Drawing.Point(1642, 366);
+			this.ButtonCupToFluidOunce.Location = new System.Drawing.Point(1145, 343);
 			this.ButtonCupToFluidOunce.Name = "ButtonCupToFluidOunce";
-			this.ButtonCupToFluidOunce.Size = new System.Drawing.Size(145, 27);
+			this.ButtonCupToFluidOunce.Size = new System.Drawing.Size(145, 25);
 			this.ButtonCupToFluidOunce.TabIndex = 19;
 			this.ButtonCupToFluidOunce.Text = "Cup -> Fluid Oz.";
 			this.ButtonCupToFluidOunce.UseVisualStyleBackColor = true;
@@ -282,15 +295,15 @@ namespace Forms
 			// 
 			// ButtonOunceToGram
 			// 
-			this.ButtonOunceToGram.AutoSize = true;
+			this.ButtonOunceToGram.Anchor = System.Windows.Forms.AnchorStyles.Left;
 			this.ButtonOunceToGram.FlatAppearance.BorderSize = 0;
 			this.ButtonOunceToGram.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
 			this.ButtonOunceToGram.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
 			this.ButtonOunceToGram.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.ButtonOunceToGram.ForeColor = System.Drawing.Color.Lime;
-			this.ButtonOunceToGram.Location = new System.Drawing.Point(1639, 531);
+			this.ButtonOunceToGram.Location = new System.Drawing.Point(1145, 498);
 			this.ButtonOunceToGram.Name = "ButtonOunceToGram";
-			this.ButtonOunceToGram.Size = new System.Drawing.Size(126, 27);
+			this.ButtonOunceToGram.Size = new System.Drawing.Size(126, 25);
 			this.ButtonOunceToGram.TabIndex = 24;
 			this.ButtonOunceToGram.Text = "Oz. -> Gram";
 			this.ButtonOunceToGram.UseVisualStyleBackColor = true;
@@ -298,15 +311,15 @@ namespace Forms
 			// 
 			// ButtonCelsiusToFahrenheit
 			// 
-			this.ButtonCelsiusToFahrenheit.AutoSize = true;
+			this.ButtonCelsiusToFahrenheit.Anchor = System.Windows.Forms.AnchorStyles.Left;
 			this.ButtonCelsiusToFahrenheit.FlatAppearance.BorderSize = 0;
 			this.ButtonCelsiusToFahrenheit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
 			this.ButtonCelsiusToFahrenheit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
 			this.ButtonCelsiusToFahrenheit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.ButtonCelsiusToFahrenheit.ForeColor = System.Drawing.Color.Lime;
-			this.ButtonCelsiusToFahrenheit.Location = new System.Drawing.Point(1645, 498);
+			this.ButtonCelsiusToFahrenheit.Location = new System.Drawing.Point(1145, 467);
 			this.ButtonCelsiusToFahrenheit.Name = "ButtonCelsiusToFahrenheit";
-			this.ButtonCelsiusToFahrenheit.Size = new System.Drawing.Size(184, 27);
+			this.ButtonCelsiusToFahrenheit.Size = new System.Drawing.Size(184, 25);
 			this.ButtonCelsiusToFahrenheit.TabIndex = 23;
 			this.ButtonCelsiusToFahrenheit.Text = "Celsius -> Fahrenheit";
 			this.ButtonCelsiusToFahrenheit.UseVisualStyleBackColor = true;
@@ -314,15 +327,15 @@ namespace Forms
 			// 
 			// ButtonPintToCup
 			// 
-			this.ButtonPintToCup.AutoSize = true;
+			this.ButtonPintToCup.Anchor = System.Windows.Forms.AnchorStyles.Left;
 			this.ButtonPintToCup.FlatAppearance.BorderSize = 0;
 			this.ButtonPintToCup.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
 			this.ButtonPintToCup.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
 			this.ButtonPintToCup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.ButtonPintToCup.ForeColor = System.Drawing.Color.Lime;
-			this.ButtonPintToCup.Location = new System.Drawing.Point(1639, 465);
+			this.ButtonPintToCup.Location = new System.Drawing.Point(1145, 436);
 			this.ButtonPintToCup.Name = "ButtonPintToCup";
-			this.ButtonPintToCup.Size = new System.Drawing.Size(123, 27);
+			this.ButtonPintToCup.Size = new System.Drawing.Size(123, 25);
 			this.ButtonPintToCup.TabIndex = 22;
 			this.ButtonPintToCup.Text = "Pint -> Cup";
 			this.ButtonPintToCup.UseVisualStyleBackColor = true;
@@ -330,15 +343,15 @@ namespace Forms
 			// 
 			// ButtonTableSpoonToMilliLiter
 			// 
-			this.ButtonTableSpoonToMilliLiter.AutoSize = true;
+			this.ButtonTableSpoonToMilliLiter.Anchor = System.Windows.Forms.AnchorStyles.Left;
 			this.ButtonTableSpoonToMilliLiter.FlatAppearance.BorderSize = 0;
 			this.ButtonTableSpoonToMilliLiter.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
 			this.ButtonTableSpoonToMilliLiter.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
 			this.ButtonTableSpoonToMilliLiter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.ButtonTableSpoonToMilliLiter.ForeColor = System.Drawing.Color.Lime;
-			this.ButtonTableSpoonToMilliLiter.Location = new System.Drawing.Point(1639, 597);
+			this.ButtonTableSpoonToMilliLiter.Location = new System.Drawing.Point(1145, 560);
 			this.ButtonTableSpoonToMilliLiter.Name = "ButtonTableSpoonToMilliLiter";
-			this.ButtonTableSpoonToMilliLiter.Size = new System.Drawing.Size(126, 27);
+			this.ButtonTableSpoonToMilliLiter.Size = new System.Drawing.Size(126, 25);
 			this.ButtonTableSpoonToMilliLiter.TabIndex = 27;
 			this.ButtonTableSpoonToMilliLiter.Text = "Tbsp. -> mL";
 			this.ButtonTableSpoonToMilliLiter.UseVisualStyleBackColor = true;
@@ -346,15 +359,15 @@ namespace Forms
 			// 
 			// ButtonTeaSpoonToMilliLitter
 			// 
-			this.ButtonTeaSpoonToMilliLitter.AutoSize = true;
+			this.ButtonTeaSpoonToMilliLitter.Anchor = System.Windows.Forms.AnchorStyles.Left;
 			this.ButtonTeaSpoonToMilliLitter.FlatAppearance.BorderSize = 0;
 			this.ButtonTeaSpoonToMilliLitter.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
 			this.ButtonTeaSpoonToMilliLitter.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
 			this.ButtonTeaSpoonToMilliLitter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.ButtonTeaSpoonToMilliLitter.ForeColor = System.Drawing.Color.Lime;
-			this.ButtonTeaSpoonToMilliLitter.Location = new System.Drawing.Point(1633, 630);
+			this.ButtonTeaSpoonToMilliLitter.Location = new System.Drawing.Point(1145, 591);
 			this.ButtonTeaSpoonToMilliLitter.Name = "ButtonTeaSpoonToMilliLitter";
-			this.ButtonTeaSpoonToMilliLitter.Size = new System.Drawing.Size(126, 27);
+			this.ButtonTeaSpoonToMilliLitter.Size = new System.Drawing.Size(126, 25);
 			this.ButtonTeaSpoonToMilliLitter.TabIndex = 26;
 			this.ButtonTeaSpoonToMilliLitter.Text = "Tsp. -> mL";
 			this.ButtonTeaSpoonToMilliLitter.UseVisualStyleBackColor = true;
@@ -362,15 +375,15 @@ namespace Forms
 			// 
 			// ButtonKgToGram
 			// 
-			this.ButtonKgToGram.AutoSize = true;
+			this.ButtonKgToGram.Anchor = System.Windows.Forms.AnchorStyles.Left;
 			this.ButtonKgToGram.FlatAppearance.BorderSize = 0;
 			this.ButtonKgToGram.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
 			this.ButtonKgToGram.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
 			this.ButtonKgToGram.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.ButtonKgToGram.ForeColor = System.Drawing.Color.Lime;
-			this.ButtonKgToGram.Location = new System.Drawing.Point(1642, 564);
+			this.ButtonKgToGram.Location = new System.Drawing.Point(1145, 529);
 			this.ButtonKgToGram.Name = "ButtonKgToGram";
-			this.ButtonKgToGram.Size = new System.Drawing.Size(123, 27);
+			this.ButtonKgToGram.Size = new System.Drawing.Size(123, 25);
 			this.ButtonKgToGram.TabIndex = 25;
 			this.ButtonKgToGram.Text = "Kg. -> Gram";
 			this.ButtonKgToGram.UseVisualStyleBackColor = true;
@@ -378,15 +391,15 @@ namespace Forms
 			// 
 			// ButtonGallonToLiter
 			// 
-			this.ButtonGallonToLiter.AutoSize = true;
+			this.ButtonGallonToLiter.Anchor = System.Windows.Forms.AnchorStyles.Left;
 			this.ButtonGallonToLiter.FlatAppearance.BorderSize = 0;
 			this.ButtonGallonToLiter.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
 			this.ButtonGallonToLiter.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
 			this.ButtonGallonToLiter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.ButtonGallonToLiter.ForeColor = System.Drawing.Color.Lime;
-			this.ButtonGallonToLiter.Location = new System.Drawing.Point(1645, 696);
+			this.ButtonGallonToLiter.Location = new System.Drawing.Point(1145, 653);
 			this.ButtonGallonToLiter.Name = "ButtonGallonToLiter";
-			this.ButtonGallonToLiter.Size = new System.Drawing.Size(130, 27);
+			this.ButtonGallonToLiter.Size = new System.Drawing.Size(130, 25);
 			this.ButtonGallonToLiter.TabIndex = 30;
 			this.ButtonGallonToLiter.Text = "Gallon -> Liter";
 			this.ButtonGallonToLiter.UseVisualStyleBackColor = true;
@@ -394,13 +407,13 @@ namespace Forms
 			// 
 			// ButtonPoundToGram
 			// 
-			this.ButtonPoundToGram.AutoSize = true;
+			this.ButtonPoundToGram.Anchor = System.Windows.Forms.AnchorStyles.Left;
 			this.ButtonPoundToGram.FlatAppearance.BorderSize = 0;
 			this.ButtonPoundToGram.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
 			this.ButtonPoundToGram.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
 			this.ButtonPoundToGram.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.ButtonPoundToGram.ForeColor = System.Drawing.Color.Lime;
-			this.ButtonPoundToGram.Location = new System.Drawing.Point(1645, 729);
+			this.ButtonPoundToGram.Location = new System.Drawing.Point(1145, 687);
 			this.ButtonPoundToGram.Name = "ButtonPoundToGram";
 			this.ButtonPoundToGram.Size = new System.Drawing.Size(138, 27);
 			this.ButtonPoundToGram.TabIndex = 29;
@@ -410,76 +423,93 @@ namespace Forms
 			// 
 			// ButtonCupToMilliLiter
 			// 
-			this.ButtonCupToMilliLiter.AutoSize = true;
+			this.ButtonCupToMilliLiter.Anchor = System.Windows.Forms.AnchorStyles.Left;
 			this.ButtonCupToMilliLiter.FlatAppearance.BorderSize = 0;
 			this.ButtonCupToMilliLiter.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
 			this.ButtonCupToMilliLiter.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
 			this.ButtonCupToMilliLiter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.ButtonCupToMilliLiter.ForeColor = System.Drawing.Color.Lime;
-			this.ButtonCupToMilliLiter.Location = new System.Drawing.Point(1633, 663);
+			this.ButtonCupToMilliLiter.Location = new System.Drawing.Point(1145, 622);
 			this.ButtonCupToMilliLiter.Name = "ButtonCupToMilliLiter";
-			this.ButtonCupToMilliLiter.Size = new System.Drawing.Size(123, 27);
+			this.ButtonCupToMilliLiter.Size = new System.Drawing.Size(123, 25);
 			this.ButtonCupToMilliLiter.TabIndex = 28;
 			this.ButtonCupToMilliLiter.Text = "Cup -> mL";
 			this.ButtonCupToMilliLiter.UseVisualStyleBackColor = true;
 			this.ButtonCupToMilliLiter.Click += new System.EventHandler(this.ButtonCupToMilliLiter_Click);
 			// 
+			// tableLayoutPanelMain
+			// 
+			this.tableLayoutPanelMain.ColumnCount = 3;
+			this.tableLayoutPanelMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+			this.tableLayoutPanelMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 85F));
+			this.tableLayoutPanelMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+			this.tableLayoutPanelMain.Controls.Add(this.RichTextBoxRecipeInfo, 1, 0);
+			this.tableLayoutPanelMain.Controls.Add(this.ButtonPoundToGram, 2, 22);
+			this.tableLayoutPanelMain.Controls.Add(this.ButtonGallonToLiter, 2, 21);
+			this.tableLayoutPanelMain.Controls.Add(this.LabelScale, 2, 0);
+			this.tableLayoutPanelMain.Controls.Add(this.ButtonQuarterScale, 2, 1);
+			this.tableLayoutPanelMain.Controls.Add(this.ButtonCupToMilliLiter, 2, 20);
+			this.tableLayoutPanelMain.Controls.Add(this.ButtonHalfScale, 2, 2);
+			this.tableLayoutPanelMain.Controls.Add(this.ButtonTeaSpoonToMilliLitter, 2, 19);
+			this.tableLayoutPanelMain.Controls.Add(this.ButtonTableSpoonToMilliLiter, 2, 18);
+			this.tableLayoutPanelMain.Controls.Add(this.ButtonOneScale, 2, 3);
+			this.tableLayoutPanelMain.Controls.Add(this.ButtonDoubleScale, 2, 4);
+			this.tableLayoutPanelMain.Controls.Add(this.ButtonKgToGram, 2, 17);
+			this.tableLayoutPanelMain.Controls.Add(this.ButtonQuadrupleScale, 2, 5);
+			this.tableLayoutPanelMain.Controls.Add(this.ButtonOunceToGram, 2, 16);
+			this.tableLayoutPanelMain.Controls.Add(this.LabelConversions, 2, 6);
+			this.tableLayoutPanelMain.Controls.Add(this.ButtonCelsiusToFahrenheit, 2, 15);
+			this.tableLayoutPanelMain.Controls.Add(this.ButtonResetConversions, 2, 7);
+			this.tableLayoutPanelMain.Controls.Add(this.ButtonPintToCup, 2, 14);
+			this.tableLayoutPanelMain.Controls.Add(this.ButtonTableSpoonToTeaSpoon, 2, 8);
+			this.tableLayoutPanelMain.Controls.Add(this.ButtonQuartToPint, 2, 13);
+			this.tableLayoutPanelMain.Controls.Add(this.ButtonCupToTableSpoon, 2, 9);
+			this.tableLayoutPanelMain.Controls.Add(this.ButtonGallonToQuart, 2, 12);
+			this.tableLayoutPanelMain.Controls.Add(this.ButtonCupToTeaSpoon, 2, 10);
+			this.tableLayoutPanelMain.Controls.Add(this.ButtonCupToFluidOunce, 2, 11);
+			this.tableLayoutPanelMain.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.tableLayoutPanelMain.Location = new System.Drawing.Point(0, 0);
+			this.tableLayoutPanelMain.MinimumSize = new System.Drawing.Size(1334, 721);
+			this.tableLayoutPanelMain.Name = "tableLayoutPanelMain";
+			this.tableLayoutPanelMain.RowCount = 23;
+			this.tableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+			this.tableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.546116F));
+			this.tableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.546116F));
+			this.tableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.546116F));
+			this.tableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.546116F));
+			this.tableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.546116F));
+			this.tableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.546116F));
+			this.tableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.546116F));
+			this.tableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.546116F));
+			this.tableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.546116F));
+			this.tableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.546116F));
+			this.tableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.546116F));
+			this.tableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.546116F));
+			this.tableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.546116F));
+			this.tableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.546116F));
+			this.tableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.544299F));
+			this.tableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.544299F));
+			this.tableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.544299F));
+			this.tableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.544299F));
+			this.tableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.544299F));
+			this.tableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.544299F));
+			this.tableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.544299F));
+			this.tableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.544299F));
+			this.tableLayoutPanelMain.Size = new System.Drawing.Size(1334, 721);
+			this.tableLayoutPanelMain.TabIndex = 31;
+			// 
 			// ShowRecipeScreen
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.Controls.Add(this.ButtonGallonToLiter);
-			this.Controls.Add(this.ButtonPoundToGram);
-			this.Controls.Add(this.ButtonCupToMilliLiter);
-			this.Controls.Add(this.ButtonTableSpoonToMilliLiter);
-			this.Controls.Add(this.ButtonTeaSpoonToMilliLitter);
-			this.Controls.Add(this.ButtonKgToGram);
-			this.Controls.Add(this.ButtonOunceToGram);
-			this.Controls.Add(this.ButtonCelsiusToFahrenheit);
-			this.Controls.Add(this.ButtonPintToCup);
-			this.Controls.Add(this.ButtonQuartToPint);
-			this.Controls.Add(this.ButtonGallonToQuart);
-			this.Controls.Add(this.ButtonCupToFluidOunce);
-			this.Controls.Add(this.ButtonResetConversions);
-			this.Controls.Add(this.ButtonCupToTeaSpoon);
-			this.Controls.Add(this.ButtonCupToTableSpoon);
-			this.Controls.Add(this.ButtonTableSpoonToTeaSpoon);
-			this.Controls.Add(this.LabelConversions);
-			this.Controls.Add(this.ButtonQuadrupleScale);
-			this.Controls.Add(this.ButtonDoubleScale);
-			this.Controls.Add(this.ButtonOneScale);
-			this.Controls.Add(this.ButtonHalfScale);
-			this.Controls.Add(this.ButtonQuarterScale);
-			this.Controls.Add(this.LabelScale);
-			this.Controls.Add(this.RichTextBoxRecipeInfo);
+			this.Controls.Add(this.tableLayoutPanelMain);
 			this.Name = "ShowRecipeScreen";
-			this.Size = new System.Drawing.Size(1832, 934);
+			this.Size = new System.Drawing.Size(1334, 721);
 			this.Enter += new System.EventHandler(this.ShowRecipeScreen_Enter);
+			this.Controls.SetChildIndex(this.tableLayoutPanelMain, 0);
 			this.Controls.SetChildIndex(this.ButtonBack, 0);
-			this.Controls.SetChildIndex(this.RichTextBoxRecipeInfo, 0);
-			this.Controls.SetChildIndex(this.LabelScale, 0);
-			this.Controls.SetChildIndex(this.ButtonQuarterScale, 0);
-			this.Controls.SetChildIndex(this.ButtonHalfScale, 0);
-			this.Controls.SetChildIndex(this.ButtonOneScale, 0);
-			this.Controls.SetChildIndex(this.ButtonDoubleScale, 0);
-			this.Controls.SetChildIndex(this.ButtonQuadrupleScale, 0);
-			this.Controls.SetChildIndex(this.LabelConversions, 0);
-			this.Controls.SetChildIndex(this.ButtonTableSpoonToTeaSpoon, 0);
-			this.Controls.SetChildIndex(this.ButtonCupToTableSpoon, 0);
-			this.Controls.SetChildIndex(this.ButtonCupToTeaSpoon, 0);
-			this.Controls.SetChildIndex(this.ButtonResetConversions, 0);
-			this.Controls.SetChildIndex(this.ButtonCupToFluidOunce, 0);
-			this.Controls.SetChildIndex(this.ButtonGallonToQuart, 0);
-			this.Controls.SetChildIndex(this.ButtonQuartToPint, 0);
-			this.Controls.SetChildIndex(this.ButtonPintToCup, 0);
-			this.Controls.SetChildIndex(this.ButtonCelsiusToFahrenheit, 0);
-			this.Controls.SetChildIndex(this.ButtonOunceToGram, 0);
-			this.Controls.SetChildIndex(this.ButtonKgToGram, 0);
-			this.Controls.SetChildIndex(this.ButtonTeaSpoonToMilliLitter, 0);
-			this.Controls.SetChildIndex(this.ButtonTableSpoonToMilliLiter, 0);
-			this.Controls.SetChildIndex(this.ButtonCupToMilliLiter, 0);
-			this.Controls.SetChildIndex(this.ButtonPoundToGram, 0);
-			this.Controls.SetChildIndex(this.ButtonGallonToLiter, 0);
+			this.tableLayoutPanelMain.ResumeLayout(false);
+			this.tableLayoutPanelMain.PerformLayout();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -511,5 +541,6 @@ namespace Forms
 		private System.Windows.Forms.Button ButtonGallonToLiter;
 		private System.Windows.Forms.Button ButtonPoundToGram;
 		private System.Windows.Forms.Button ButtonCupToMilliLiter;
+		private System.Windows.Forms.TableLayoutPanel tableLayoutPanelMain;
 	}
 }
