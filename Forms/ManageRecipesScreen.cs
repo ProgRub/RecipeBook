@@ -28,6 +28,7 @@ namespace Forms
 			{
 				ListBoxRecipes.Items.Add(recipe.Name);
 			}
+			SetWindowMinimumSizeBasedOnTableLayout(tableLayoutPanelMain,false);
 		}
 
 		private RecipeDTO GetSelectedRecipe()
