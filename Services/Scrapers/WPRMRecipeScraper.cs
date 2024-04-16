@@ -17,16 +17,14 @@ namespace Services.Scrapers
 		{
 			return ConvertStringToTimeSpan(GetDecodedInnerText(HtmlDocument.DocumentNode.Descendants("div")
 				.First(x => x.GetAttributeValue("class", "").Contains("wprm-recipe-cook-time-container"))
-				.Descendants("span").Where(x => x.GetAttributeValue("class", "").Contains("wprm-recipe-time"))
-				.ToList()[1]));
+				.Descendants("span").Where(x => x.GetAttributeValue("class", "").Contains("wprm-recipe-time")).ToList()[1]));
 		}
 
 		public override TimeSpan GetPrepTime()
 		{
 			return ConvertStringToTimeSpan(GetDecodedInnerText(HtmlDocument.DocumentNode.Descendants("div")
 				.First(x => x.GetAttributeValue("class", "").Contains("wprm-recipe-prep-time-container"))
-				.Descendants("span").Where(x => x.GetAttributeValue("class", "").Contains("wprm-recipe-time"))
-				.ToList()[1]));
+				.Descendants("span").Where(x => x.GetAttributeValue("class", "").Contains("wprm-recipe-time")).ToList()[1]));
 		}
 
 		public override string GetRecipeName()
@@ -37,12 +35,12 @@ namespace Services.Scrapers
 		public override string GetYield()
 		{
 			return HtmlDocument.DocumentNode.Descendants("input")
-				       .First(x => x.GetAttributeValue("id", "") == "wprm-print-servings")
-				       .GetAttributeValue("value", "") +
-			       " servings";
+					   .First(x => x.GetAttributeValue("id", "") == "wprm-print-servings")
+					   .GetAttributeValue("value", "") +
+				   " servings";
 		}
 
-		public override IDictionary<string,List<Ingredient>> GetIngredients()
+		public override IDictionary<string, List<Ingredient>> GetIngredients()
 		{
 			var ingredientsDictionary = new Dictionary<string, List<Ingredient>>();
 			foreach (var ingredientsSection in HtmlDocument.DocumentNode.Descendants("div")
@@ -51,18 +49,7 @@ namespace Services.Scrapers
 				var ingredientsUse = "";
 				if (ingredientsSection.Descendants("h4").Any())
 				{
-
-					var numberWordsToSkip = 2;
-					if (ingredientsSection.Descendants("h4").First().InnerText
-						.Split(new char[0], StringSplitOptions.RemoveEmptyEntries)[1] != "the")
-					{
-						numberWordsToSkip--;
-					}
-
-					ingredientsUse = string.Join(" ",
-						GetDecodedInnerText(ingredientsSection.Descendants("h4").First())
-							.Split(new char[0], StringSplitOptions.RemoveEmptyEntries).Skip(numberWordsToSkip));
-					ingredientsUse = ingredientsUse.First().ToString().ToUpper() + ingredientsUse.Substring(1);
+					ingredientsUse = GetDecodedInnerText(ingredientsSection.Descendants("h4").First());
 
 					if (ingredientsUse.Last() == ':')
 					{
@@ -82,11 +69,24 @@ namespace Services.Scrapers
 					}
 					catch (FormatException)
 					{
-						var innerTextSplit = GetDecodedInnerText(ingredientHtmlNode.Descendants("span")
+						var firstMeasurement = GetDecodedInnerText(ingredientHtmlNode.Descendants("span")
 								.First(x => x.GetAttributeValue("class", "") == "wprm-recipe-ingredient-amount"))
-							.Split(new char[0], StringSplitOptions.RemoveEmptyEntries);
-						amount = ConvertFactionToDouble(innerTextSplit[0]);
-						measurement = ConvertStringToMeasurement(innerTextSplit[1]);
+							.Split('/', StringSplitOptions.RemoveEmptyEntries);
+						var innerTextSplit = firstMeasurement[0].Split(new char[0], StringSplitOptions.RemoveEmptyEntries);
+						try
+						{
+							amount = ConvertFactionToDouble(innerTextSplit[0]);
+							measurement = ConvertStringToMeasurement(innerTextSplit[1]);
+						}
+						catch (Exception ex) when (ex is FormatException || ex is IndexOutOfRangeException)
+						{
+							amount = ConvertFactionToDouble(innerTextSplit[0].Substring(0, innerTextSplit[0].Length - 1));
+							measurement = ConvertStringToMeasurement(innerTextSplit[0][innerTextSplit[0].Length - 1].ToString());
+						}
+					}
+					catch (InvalidOperationException)
+					{
+						amount = 1;
 					}
 
 					var name = "";
@@ -113,9 +113,9 @@ namespace Services.Scrapers
 						name += " " + GetDecodedInnerText(ingredientHtmlNode.Descendants("span").First(x =>
 							x.GetAttributeValue("class", "") == " wprm-recipe-ingredient-notes"));
 					}
-					
+
 					AddIngredientToDictionary(ingredientsUse,
-						new Ingredient {Quantity = amount, Name = name, Measurement = measurement},
+						new Ingredient { Quantity = amount, Name = name, Measurement = measurement },
 						ingredientsDictionary);
 				}
 			}
@@ -131,7 +131,7 @@ namespace Services.Scrapers
 				.ToList();
 		}
 
-		public override  IList<string> GetNotes()
+		public override IList<string> GetNotes()
 		{
 			return HtmlDocument.DocumentNode.Descendants("div")
 				.Where(x => x.GetAttributeValue("class", "") == "wprm-recipe-notes")

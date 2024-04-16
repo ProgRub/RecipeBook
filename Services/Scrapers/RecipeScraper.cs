@@ -17,6 +17,11 @@ namespace Services.Scrapers
 			var htmlWeb = new HtmlWeb();
 			HtmlDocument = htmlWeb.Load(url);
 			var recipe = new Recipe();
+			recipe.Name = GetRecipeName();
+			recipe.Url = url;
+			recipe.PrepTime = GetPrepTime();
+			recipe.CookTime = GetCookTime();
+			recipe.Yield = GetYield();
 			recipe.IngredientsByComponent = GetIngredients();
 			recipe.Instructions = GetInstructions();
 			recipe.Notes = GetNotes();
@@ -39,10 +44,7 @@ namespace Services.Scrapers
 			{
 				dictionary.Add(whatComponent, new List<Ingredient>());
 			}
-			else
-			{
-				dictionary[whatComponent].Add(ingredient);
-			}
+			dictionary[whatComponent].Add(ingredient);
 		}
 
 		public Measurement ConvertStringToMeasurement(string measurementString)
@@ -71,15 +73,16 @@ namespace Services.Scrapers
 				"ounces" => Measurement.Ounce,
 				"oz" => Measurement.Ounce,
 				"oz." => Measurement.Ounce,
+				"g" => Measurement.Gram,
 				_ => Measurement.Unit
 			};
 		}
 
 		protected TimeSpan ConvertStringToTimeSpan(string timeString)
 		{
-			var timeSplit = timeString.Split(new char[] {' '});
+			var timeSplit = timeString.Split(new char[] { ' ' });
 			var totalMinutes = 0;
-			for (var index = 0; index < timeSplit.Length; index += 2)
+			for (var index = 0; index + 1 < timeSplit.Length; index += 2)
 			{
 				if (timeSplit[index + 1].ToLower().Contains("min"))
 				{
@@ -119,13 +122,12 @@ namespace Services.Scrapers
 			double result = 0.0;
 			if (faction.Contains("/"))
 			{
-				Debug.WriteLine(faction);
 				var numberSplit = faction.Split('/');
 				result += double.Parse(numberSplit[0]) / double.Parse(numberSplit[1]);
 			}
 			else
 			{
-				result += double.Parse(char.GetNumericValue(faction[0]).ToString());
+				result += double.Parse(faction);
 			}
 
 			return result;
