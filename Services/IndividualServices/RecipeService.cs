@@ -48,9 +48,14 @@ namespace Services.IndividualServices
 				}
 			}
 
-			if (url.Contains("gimmesomeoven") || url.Contains("pinchofyum"))
+			if (url.Contains("tasty"))
 			{
 				return RecipeDTO.ConvertRecipeToDTO(TastyRecipeScraper.Instance.ScrapeRecipe(url));
+			}
+
+			if (url.Contains("gimmesomeoven") || url.Contains("pinchofyum"))
+			{
+				return RecipeDTO.ConvertRecipeToDTO(TastyOffshootsRecipeScraper.Instance.ScrapeRecipe(url));
 			}
 
 			if (url.Contains("delish"))
