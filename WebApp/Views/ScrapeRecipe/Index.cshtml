@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Scrape Recipe";
+}
+
+<div class="text-center">
+    <h1 class="display-4">New Recipe</h1>
+    <h2>Just submit the URL of the recipe you want to save (the URL you get when you hit "print"). Verify it's right and hit Save.</h2>
+    <form asp-action="Scrape" method="post" >
+        <label for="url">URL:</label>
+        <input type="text" id="url" name="url" size="100"/>
+        <button type="submit">Submit</button></form>
+</div>
+<div>
+
+</div>
