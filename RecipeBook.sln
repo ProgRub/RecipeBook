@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31424.327
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Forms", "Forms\Forms.csproj", "{214BFF5F-D345-4965-9C75-C42F3E94B887}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Forms", "Forms\Forms.csproj", "{214BFF5F-D345-4965-9C75-C42F3E94B887}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database", "Database\Database.csproj", "{134F833D-F7FA-4F1B-B72A-6C71D1B75AEC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Database", "Database\Database.csproj", "{134F833D-F7FA-4F1B-B72A-6C71D1B75AEC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{7B543B4B-274D-4EDD-B24E-C7A3B7498745}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services", "Services\Services.csproj", "{7B543B4B-274D-4EDD-B24E-C7A3B7498745}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp", "WebApp\WebApp.csproj", "{A263699E-823C-4FF2-8A03-FFE680ABD71D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{7B543B4B-274D-4EDD-B24E-C7A3B7498745}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B543B4B-274D-4EDD-B24E-C7A3B7498745}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B543B4B-274D-4EDD-B24E-C7A3B7498745}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A263699E-823C-4FF2-8A03-FFE680ABD71D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A263699E-823C-4FF2-8A03-FFE680ABD71D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A263699E-823C-4FF2-8A03-FFE680ABD71D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A263699E-823C-4FF2-8A03-FFE680ABD71D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
