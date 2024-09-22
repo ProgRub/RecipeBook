@@ -6,8 +6,9 @@ using Database.Entities;
 namespace Services.DTOs
 {
 	public class RecipeDTO
-	{
-		public TimeSpan CookTime { get; set; }
+    {
+        public int Id { get; set; }
+        public TimeSpan CookTime { get; set; }
 		public TimeSpan PrepTime { get; set; }
 		public IDictionary<string,List<IngredientDTO>> IngredientsByComponent { get; set; }
 		public IList<string> Instructions { get; set; }
