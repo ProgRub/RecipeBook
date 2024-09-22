@@ -44,29 +44,34 @@ namespace Services.IndividualServices
 			{
 				if (item.Url == url)
 				{
-					return RecipeDTO.ConvertRecipeToDTO(item);
+					SelectedRecipe = RecipeDTO.ConvertRecipeToDTO(item);
+					return SelectedRecipe;
 				}
 			}
 
 			if (url.Contains("tasty"))
 			{
-				return RecipeDTO.ConvertRecipeToDTO(TastyRecipeScraper.Instance.ScrapeRecipe(url));
-			}
+                SelectedRecipe = RecipeDTO.ConvertRecipeToDTO(TastyRecipeScraper.Instance.ScrapeRecipe(url));
+                return SelectedRecipe;
+            }
 
 			if (url.Contains("gimmesomeoven") || url.Contains("pinchofyum"))
 			{
-				return RecipeDTO.ConvertRecipeToDTO(TastyOffshootsRecipeScraper.Instance.ScrapeRecipe(url));
-			}
+                SelectedRecipe = RecipeDTO.ConvertRecipeToDTO(TastyOffshootsRecipeScraper.Instance.ScrapeRecipe(url));
+                return SelectedRecipe;
+            }
 
 			if (url.Contains("delish"))
 			{
-				return RecipeDTO.ConvertRecipeToDTO(DelishRecipeScraper.Instance.ScrapeRecipe(url));
-			}
+                SelectedRecipe = RecipeDTO.ConvertRecipeToDTO(DelishRecipeScraper.Instance.ScrapeRecipe(url));
+                return SelectedRecipe;
+            }
 
 			if (url.Contains("wprm_print"))
 			{
-				return RecipeDTO.ConvertRecipeToDTO(WPRMRecipeScraper.Instance.ScrapeRecipe(url));
-			}
+                SelectedRecipe = RecipeDTO.ConvertRecipeToDTO(WPRMRecipeScraper.Instance.ScrapeRecipe(url));
+                return SelectedRecipe;
+            }
 
 			return null;
 		}

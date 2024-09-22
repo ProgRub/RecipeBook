@@ -22,7 +22,7 @@ namespace WebApp.Controllers
         [Route("ScrapeRecipe/Result")]
         public ActionResult Result()
         {
-            RecipeDTO recipe = ViewData["Recipe"] as RecipeDTO;
+            RecipeDTO recipe = ServicesFacade.Instance.GetSelectedRecipe();
             Debug.WriteLine(recipe.Name);
             return View(recipe);
         }
@@ -33,8 +33,7 @@ namespace WebApp.Controllers
         public ActionResult Scrape(IFormCollection collection)
         {
             var recipe = ServicesFacade.GetRecipe(collection["url"]);
-            ViewData["Recipe"] = recipe;
-            return RedirectToAction("Index");
+            return RedirectToAction("Result");
         }
 
         // POST: ScrapeRecipeController/SaveRecipe
