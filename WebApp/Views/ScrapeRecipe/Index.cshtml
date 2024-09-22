@@ -1,32 +1,13 @@
-﻿@model Services.DTOs.RecipeDTO
-@{
-    ViewData["Title"] = "Scrape Recipe";
+﻿@{
+	ViewData["Title"] = "Scrape Recipe";
 }
 
 <div class="text-center">
-    <h1 class="display-4">New Recipe</h1>
-    <h2>Just submit the URL of the recipe you want to save (the URL you get when you hit "print"). Verify it's right and hit Save.</h2>
-    <form asp-action="Scrape" method="post" >
-        <label for="url">URL:</label>
-        <input type="text" id="url" name="url" size="100"/>
-        <button type="submit">Submit</button></form>
+	<h1 class="display-4">@ViewData["Title"]</h1>
+	<h2>Just submit the URL of the recipe you want to save (the URL you get when you hit "print"). Verify it's right and hit Save.</h2>
+	<form asp-action="Scrape" method="post">
+		<label for="url">URL:</label>
+		<input type="text" id="url" name="url" size="100" />
+		<button type="submit">Submit</button>
+	</form>
 </div>
-@if(Model != null){
-<div>
-    <ul>
-        @foreach (var component in Model.IngredientsByComponent)
-        {
-            foreach (var ingredient in component.Value)
-            {
-                <li>@Html.DisplayFor(i => ingredient.Name)</li>
-            }
-        }
-    </ul>
-    </div>
-} 
-@if (Model == null)
-{
-    <div>
-        <h2>TESTE</h2>
-    </div>
-}

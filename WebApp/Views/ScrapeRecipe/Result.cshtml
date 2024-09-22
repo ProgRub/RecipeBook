@@ -1,17 +1,22 @@
-﻿@model Services.DTOs.RecipeDTO 
+﻿@model Services.DTOs.RecipeDTO
 
-@{
-    Layout = null;
-}
 
-<!DOCTYPE html>
+<div class="text-center">
+	<ul>
+		@foreach (var component in Model.IngredientsByComponent)
+		{
+			foreach (var ingredient in component.Value)
+			{
+				<li>@Html.DisplayFor(i => ingredient.Name)</li>
+			}
+		}
+	</ul>
+</div>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Result</title>
-</head>
-<body>
+
+
+
+
 @* <table class="table">
     <thead>
         <tr>
@@ -60,14 +65,3 @@
 }
     </tbody>
 </table> *@
-        <ul>
-        @foreach(var component in Model.IngredientsByComponent)
-        {
-                foreach(var ingredient in component.Value)
-                {
-                    <li>@Html.DisplayFor(i => ingredient.Name)</li>
-                }
-            }
-        </ul>
-</body>
-</html>
