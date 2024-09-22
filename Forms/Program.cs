@@ -15,12 +15,12 @@ namespace Forms
 		[STAThread]
 		static void Main()
 		{
-			ServicesFacade.Instance.LoadDatabase();
+            ServicesFacade.LoadDatabase();
 			Application.SetHighDpiMode(HighDpiMode.SystemAware);
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
 			Application.Run(new Window());
-			ServicesFacade.Instance.SaveDatabase();
+            ServicesFacade.SaveDatabase();
 		}
 	}
 }

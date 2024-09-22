@@ -1,4 +1,5 @@
-﻿@{
+﻿@model Services.DTOs.RecipeDTO
+@{
     ViewData["Title"] = "Scrape Recipe";
 }
 
@@ -10,6 +11,22 @@
         <input type="text" id="url" name="url" size="100"/>
         <button type="submit">Submit</button></form>
 </div>
+@if(Model != null){
 <div>
-
-</div>
+    <ul>
+        @foreach (var component in Model.IngredientsByComponent)
+        {
+            foreach (var ingredient in component.Value)
+            {
+                <li>@Html.DisplayFor(i => ingredient.Name)</li>
+            }
+        }
+    </ul>
+    </div>
+} 
+@if (Model == null)
+{
+    <div>
+        <h2>TESTE</h2>
+    </div>
+}

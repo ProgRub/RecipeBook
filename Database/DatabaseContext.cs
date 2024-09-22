@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Xml.Linq;
 using Database.Entities;
 
@@ -9,6 +10,7 @@ namespace Database
 	public class DatabaseContext
 	{
 		private static readonly string FilePath = Path.Combine(Directory.GetCurrentDirectory(), "Recipes.xml");
+		public static ISet<Recipe> Recipes = new HashSet<Recipe>();
 
 		public static void Load()
 		{
@@ -115,11 +117,16 @@ namespace Database
 			xmlDocument.Save(FilePath);
 		}
 
-		public static ISet<Recipe> Recipes = new HashSet<Recipe>();
 
-		public static void SaveRecipe(Recipe recipe)
+		public static void AddRecipe(Recipe recipe)
 		{
 			Recipes.Add(recipe);
 		}
-	}
+        public static void DeleteRecipe(Recipe recipe)
+        {
+            Recipes.Remove(recipe);
+        }
+        public static int GetNewId() => Recipes.Count + 1;
+		public static Recipe GetLastRecipe() => Recipes.First(x=> x.Id == Recipes.Count);
+    }
 }

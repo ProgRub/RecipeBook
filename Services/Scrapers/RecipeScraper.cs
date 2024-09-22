@@ -17,6 +17,7 @@ namespace Services.Scrapers
 			var htmlWeb = new HtmlWeb();
 			HtmlDocument = htmlWeb.Load(url);
 			var recipe = new Recipe();
+			recipe.Id = DatabaseContext.GetNewId();
 			recipe.Name = GetRecipeName();
 			recipe.Url = url;
 			recipe.PrepTime = GetPrepTime();
@@ -25,7 +26,7 @@ namespace Services.Scrapers
 			recipe.IngredientsByComponent = GetIngredients();
 			recipe.Instructions = GetInstructions();
 			recipe.Notes = GetNotes();
-			DatabaseContext.SaveRecipe(recipe);
+			DatabaseContext.AddRecipe(recipe);
 			return recipe;
 		}
 

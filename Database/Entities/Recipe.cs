@@ -5,6 +5,7 @@ namespace Database.Entities
 {
 	public class Recipe
 	{
+		public int Id { get; set; }
 		public TimeSpan CookTime { get; set; }
 		public TimeSpan PrepTime { get; set; }
 		public IDictionary<string,List<Ingredient>> IngredientsByComponent { get; set; }

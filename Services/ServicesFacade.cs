@@ -12,8 +12,8 @@ namespace Services
 		private ServicesFacade(){}
 		public static ServicesFacade Instance { get; } = new ServicesFacade();
 
-		public void LoadDatabase() => DatabaseContext.Load();
-		public void SaveDatabase() => DatabaseContext.Save();
+		public static void LoadDatabase() => DatabaseContext.Load();
+		public static void SaveDatabase() => DatabaseContext.Save();
 
 		public static RecipeDTO GetRecipe(string recipeUrl) => RecipeService.Instance.GetRecipe(recipeUrl);
 
