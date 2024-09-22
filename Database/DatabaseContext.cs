@@ -33,6 +33,7 @@ namespace Database
 				var cookTimeStringSplit = cookTimeString.Split(":");
 				var recipe = new Recipe
 				{
+					Id = int.Parse(recipeElement.Attribute("id").Value),
 					Name = recipeElement.Attribute("name").Value,
 					PrepTime = new TimeSpan(int.Parse(prepTimeStringSplit[0]), int.Parse(prepTimeStringSplit[1]),
 						int.Parse(prepTimeStringSplit[2])),
@@ -81,7 +82,8 @@ namespace Database
 			foreach (var recipe in Recipes)
 			{
 				var xElementRecipe = new XElement("Recipe");
-				xElementRecipe.SetAttributeValue("name", recipe.Name);
+                xElementRecipe.SetAttributeValue("id", recipe.Id);
+                xElementRecipe.SetAttributeValue("name", recipe.Name);
 				xElementRecipe.SetAttributeValue("prepTime", recipe.PrepTime.ToString());
 				xElementRecipe.SetAttributeValue("cookTime", recipe.CookTime.ToString());
 				xElementRecipe.SetAttributeValue("yield", recipe.Yield);
