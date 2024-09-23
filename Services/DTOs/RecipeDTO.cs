@@ -34,7 +34,7 @@ namespace Services.DTOs
 			}
 			return new RecipeDTO()
 			{
-				CookTime = recipe.CookTime, IngredientsByComponent = ingredients,
+				Id = recipe.Id, CookTime = recipe.CookTime, IngredientsByComponent = ingredients,
 				Instructions = recipe.Instructions, Name = recipe.Name, Notes = recipe.Notes,
 				PrepTime = recipe.PrepTime, Url = recipe.Url, Yield = recipe.Yield
 			};
@@ -56,7 +56,7 @@ namespace Services.DTOs
 			}
 			return new()
 			{
-				CookTime = CookTime, IngredientsByComponent = ingredients,
+				Id= Id, CookTime = CookTime, IngredientsByComponent = ingredients,
 				Instructions = Instructions, Name = Name, Notes = Notes,
 				PrepTime = PrepTime, Url = Url, Yield = Yield
 			};

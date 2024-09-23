@@ -1,0 +1,27 @@
+﻿@model IEnumerable<Services.DTOs.RecipeDTO>
+@{
+	ViewData["Title"] = "Cook Book";
+}
+
+<div class="text-center">
+	<h1 class="display-4">Welcome to your @ViewData["Title"]!</h1>
+	<h2>Here you can see all the recipes you have saved.</h2>
+	<h3>Click on one to see it in greater detail</h3>
+	<table>
+		<thead>
+			<tr>
+				<th>Recipe Title</th>
+				<th>Total Cook Time</th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var recipe in Model)
+			{
+				<tr>
+					<td><a class="nav-link text-dark" asp-area="" asp-controller="RecipeList" asp-action="Recipe" asp-route-recipeId="@recipe.Id">@recipe.Name</a></td>
+					<td>@(recipe.PrepTime + recipe.CookTime)</td>
+				</tr>
+			}
+		</tbody>
+	</table>
+</div>

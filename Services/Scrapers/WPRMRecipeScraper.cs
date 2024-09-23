@@ -84,7 +84,7 @@ namespace Services.Scrapers
 							measurement = ConvertStringToMeasurement(innerTextSplit[0][innerTextSplit[0].Length - 1].ToString());
 						}
 					}
-					catch (InvalidOperationException)
+					catch (InvalidOperationException) //TODO: Improve this
 					{
 						amount = 1;
 					}

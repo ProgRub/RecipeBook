@@ -17,7 +17,9 @@ namespace Services
 
 		public static RecipeDTO GetRecipe(string recipeUrl) => RecipeService.Instance.GetRecipe(recipeUrl);
 
-		public IEnumerable<RecipeDTO> GetAllRecipes() => RecipeService.Instance.GetAllRecipes();
+        public static RecipeDTO GetRecipe(int recipeId) => RecipeService.Instance.GetRecipe(recipeId);
+
+        public IEnumerable<RecipeDTO> GetAllRecipes() => RecipeService.Instance.GetAllRecipes();
 
 		public void SetSelectedRecipe(RecipeDTO selectedRecipe) =>
 			RecipeService.Instance.SelectedRecipe = selectedRecipe;

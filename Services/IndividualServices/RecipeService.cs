@@ -76,7 +76,9 @@ namespace Services.IndividualServices
 			return null;
 		}
 
-		internal IEnumerable<RecipeDTO> GetAllRecipes() => DatabaseContext.Recipes.Select(RecipeDTO.ConvertRecipeToDTO);
+        internal RecipeDTO GetRecipe(int id) => GetAllRecipes().First(x => x.Id == id);
+
+        internal IEnumerable<RecipeDTO> GetAllRecipes() => DatabaseContext.Recipes.Select(RecipeDTO.ConvertRecipeToDTO);
 
 		internal RecipeDTO ScaleRecipe(RecipeDTO recipe, double multiplier)
 		{
