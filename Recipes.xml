@@ -1,0 +1,418 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <Recipe id="1" name="Everyday Salad Dressing" prepTime="00:05:00" cookTime="00:00:00" yield="About 1/3 cup " url="https://www.gimmesomeoven.com/salad-dressing/print-recipe/74555/">
+    <Ingredient measurement="TableSpoon" quantity="3" for="">olive oil</Ingredient>
+    <Ingredient measurement="Unit" quantity="1" for="">small garlic clove, pressed or minced (or 1/2 teaspoon garlic powder)</Ingredient>
+    <Ingredient measurement="TableSpoon" quantity="1" for="">freshly-squeezed lemon juice (or red wine vinegar)</Ingredient>
+    <Ingredient measurement="TeaSpoon" quantity="1" for="">Dijon mustard</Ingredient>
+    <Ingredient measurement="TeaSpoon" quantity="0.5" for="">fine sea salt</Ingredient>
+    <Ingredient measurement="TeaSpoon" quantity="0.25" for="">freshly-cracked black pepper</Ingredient>
+    <Instruction>Combine ingredients. Whisk all ingredients together in a small bowl (or shake all ingredients together vigorously in a sealed jar) until completely combined.</Instruction>
+    <Instruction>Serve. Serve immediately or store in the refrigerator for between 1-7 days.  (See notes on storage times below.)  If you choose to refrigerate the dressing, it will need to be stirred or shaken again prior to serving.</Instruction>
+    <Note>Acid options: This salad dressing recipe also works wonderfully with just about any kind of vinegar — red wine vinegar, white wine vinegar, balsamic vinegar, apple cider vinegar, sherry vinegar, etc.  So feel free to use whatever will work best for your salad!</Note>
+    <Note>Sweetener options: Feel free to add in 1 to 2 teaspoons of honey (or your desired sweetener) if you would like to make this dressing a bit sweeter.</Note>
+    <Note>Storage instructions: I find that the lemon juice version of this dressing doesn’t taste so great after more than 24 hours in the fridge.  So if you would like to make a larger batch of the dressing to store for up to 1 week, I recommend using vinegar in place of the lemon juice.</Note>
+  </Recipe>
+  <Recipe id="2" name="Meatballs" prepTime="00:35:00" cookTime="00:10:00" yield="24-30 meatballs " url="https://www.gimmesomeoven.com/meatball-recipe/print-recipe/70946/">
+    <Ingredient measurement="Cup" quantity="1" for="">Panko breadcrumbs</Ingredient>
+    <Ingredient measurement="Cup" quantity="0.33333333333333" for="">milk</Ingredient>
+    <Ingredient measurement="Pound" quantity="1" for="">ground beef</Ingredient>
+    <Ingredient measurement="Pound" quantity="1" for="">ground pork</Ingredient>
+    <Ingredient measurement="Unit" quantity="4" for="">cloves garlic, pressed or minced</Ingredient>
+    <Ingredient measurement="Unit" quantity="2" for="">eggs</Ingredient>
+    <Ingredient measurement="Cup" quantity="1" for="">(1 1/2 ounces) finely-grated Parmesan cheese</Ingredient>
+    <Ingredient measurement="Cup" quantity="0.25" for="">finely-chopped fresh Italian herbs (I used half parsley, half basil)</Ingredient>
+    <Ingredient measurement="Cup" quantity="0.25" for="">grated yellow onion</Ingredient>
+    <Ingredient measurement="TeaSpoon" quantity="2" for="">Worcestershire sauce</Ingredient>
+    <Ingredient measurement="TeaSpoon" quantity="1" for="">dried oregano</Ingredient>
+    <Ingredient measurement="TeaSpoon" quantity="1" for="">fine sea salt</Ingredient>
+    <Ingredient measurement="TeaSpoon" quantity="0.5" for="">black pepper</Ingredient>
+    <Ingredient measurement="TeaSpoon" quantity="0.25" for="">crushed red pepper flakes</Ingredient>
+    <Instruction>Make the panade.  In a large mixing bowl, stir together the panko and milk until combined.  Set mixture aside to soak for 5 to 10 minutes while you prepare the other ingredients.</Instruction>
+    <Instruction>Combine remaining ingredients.  Add the ground beef, ground pork, garlic, eggs, Parmesan, fresh herbs, onion and Worcestershire sauce to the (same) mixing bowl.  Sprinkle the oregano, salt, black pepper and crushed red pepper flakes evenly on top.  Use your hands to mix the ingredients until evenly combined, being careful not to over-mix the ingredients.</Instruction>
+    <Instruction>Chill (optional step).  To make the meatballs easier to form, I recommend covering and chilling the mixture in the refrigerator for 1 hour.  But if you’re pressed for time, you can skip this step.</Instruction>
+    <Instruction>Prep oven and baking sheet.  Heat the oven to 425°F and line a large rimmed baking sheet with parchment paper.</Instruction>
+    <Instruction>Form the meatballs.  Using a medium cookie scoop or a spoon, scoop and roll the mixture into 2-tablespoon balls and place them on the prepared baking sheet.  (I recommend greasing your hands with a bit of olive oil to prevent the mixture from sticking.)</Instruction>
+    <Instruction>Bake.  Bake for 10-12 minutes, or until an instant-read thermometer measures the internal temperature of the meatballs to be 160°F.  Remove pan and transfer to a wire cooling rack.</Instruction>
+    <Instruction>Serve.  Serve meatballs immediately and enjoy!</Instruction>
+  </Recipe>
+  <Recipe id="3" name="Instant Pot Mac and Cheese" prepTime="00:05:00" cookTime="00:20:00" yield="6-8 servings " url="https://www.gimmesomeoven.com/instant-pot-mac-and-cheese-recipe/print-recipe/69305/">
+    <Ingredient measurement="Pound" quantity="1" for="">uncooked pasta</Ingredient>
+    <Ingredient measurement="Unit" quantity="3.6666666666667" for="">2/3 cups water</Ingredient>
+    <Ingredient measurement="TableSpoon" quantity="2" for="">butter</Ingredient>
+    <Ingredient measurement="Unit" quantity="1.5" for="">1/2 teaspoons Dijon mustard (or 1/2 teaspoon ground mustard)</Ingredient>
+    <Ingredient measurement="TeaSpoon" quantity="0.25" for="">garlic powder</Ingredient>
+    <Ingredient measurement="Unit" quantity="0" for="">fine sea salt and freshly-cracked black pepper</Ingredient>
+    <Ingredient measurement="Cup" quantity="1" for="">whole milk (or evaporated milk or half and half)</Ingredient>
+    <Ingredient measurement="Cup" quantity="4" for="">freshly-grated sharp cheddar cheese* (or see other cheese options below)</Ingredient>
+    <Ingredient measurement="Cup" quantity="0.5" for="">freshly-grated Parmesan cheese</Ingredient>
+    <Instruction>Prep the pasta. Add pasta, water, butter, mustard, garlic powder and 1 teaspoon salt to the bowl of an Instant Pot, and briefly stir to combine.</Instruction>
+    <Instruction>Pressure cook. Cover and set lid to “Sealing.”  Cook on high pressure (“manual”) for 4 minutes, followed by a quick release.  Remove lid.</Instruction>
+    <Instruction>Add the milk and cheeses. Add in the milk and stir briefly to combine.  Then add in the cheeses and gently stir and stir until they have completely melted into a creamy sauce.  The sauce will continue to thicken as it sits, so if it seems too thin, just let it rest for an extra minute or two.  Taste the dish and season with extra salt and black pepper, if needed.</Instruction>
+    <Instruction>Serve warm.  Serve warm and enjoy!</Instruction>
+    <Note>Pasta options: I have only tested this recipe with traditional semolina pasta.  Different shapes/types of pasta (such as whole-wheat or gluten-free pastas) may have a slightly different cooking time.</Note>
+    <Note>Milk options: You can decide how creamy you would like to make this mac and cheese!  We are quite content with using whole milk in our house, but evaporated milk or half and half would make things extra-creamy and delicious.</Note>
+    <Note>Cheese options: Cheddar, Fontina, Gouda, Gruyere, Havarti, Monterey Jack, Provolone — or a combination of any of these cheeses — all melt well into mac and cheese.</Note>
+    <Note>Why “freshly-grated” cheese: Most pre-shredded cheeses that you can purchase at the store have a coating on them that prevents the cheeses from melting well.  It’s best to purchase cheese in blocks and then grate it yourself just before adding it to the recipe.  (If you happen to have a food processor with a disc attachment, this will make grating even easier!)</Note>
+    <Note>Recipe update: Some readers were reporting that the cheese sauce was too thin, so we reduced the amount of water in the recipe by 1/3 cup.  If you find that the sauce is too thick, just add extra milk or water after the pasta has cooked and you have stirred in the other ingredients.</Note>
+  </Recipe>
+  <Recipe id="4" name="Gambas Al Ajillo (Spanish Garlic Shrimp)" prepTime="00:04:00" cookTime="00:06:00" yield="4-6 servings " url="https://www.gimmesomeoven.com/gambas-al-ajillo-spanish-garlic-shrimp/print-recipe/60916/">
+    <Ingredient measurement="Pound" quantity="1" for="">peeled and deveined large shrimp (tails on or off)</Ingredient>
+    <Ingredient measurement="Unit" quantity="0" for="">fine sea salt and freshly-cracked black pepper</Ingredient>
+    <Ingredient measurement="Cup" quantity="1" for="">olive oil</Ingredient>
+    <Ingredient measurement="Unit" quantity="12" for="">cloves garlic, thinly sliced</Ingredient>
+    <Ingredient measurement="Unit" quantity="1" for="">dried red chili pepper (or 1/4 teaspoon crushed red pepper flakes)</Ingredient>
+    <Ingredient measurement="TableSpoon" quantity="2" for="">dry sherry (or any dry white wine)</Ingredient>
+    <Ingredient measurement="Unit" quantity="0" for="">optional: thick lemon wedge and chopped fresh parsley, for serving</Ingredient>
+    <Instruction>Season the shrimp on both sides with a generous pinch of salt and pepper.  (I use about 1 teaspoon salt and about 1/2 teaspoon black pepper.)  Set aside.</Instruction>
+    <Instruction>Heat oil in a large sauté pan over medium heat until shimmering.</Instruction>
+    <Instruction>Add garlic and chili pepper and sauté for 30-60 seconds, or until the garlic starts to turn lightly golden.</Instruction>
+    <Instruction>Add in the shrimp and sauté, stirring and flipping occasionally, until the shrimp are pink and just cooked through, about 1-2 minutes.  (Try to avoid overcooking the shrimp, since they will continue to sit in the hot oil for awhile longer.)</Instruction>
+    <Instruction>Remove pan from the heat.  Add in the sherry, a squeeze of lemon juice (if using) and your desired amount of parsley (if using), and toss to combine.  Taste and season with extra salt and pepper, if needed.</Instruction>
+    <Instruction>Serve immediately with crusty bread, for dipping.</Instruction>
+  </Recipe>
+  <Recipe id="5" name="15 Minute Lo Mein" prepTime="00:05:00" cookTime="00:15:00" yield="4 " url="https://pinchofyum.com/lo-mein/print/42753">
+    <Ingredient measurement="TableSpoon" quantity="2" for="Sauce">dark soy sauce (sub regular soy sauce if needed)</Ingredient>
+    <Ingredient measurement="TableSpoon" quantity="1" for="Sauce">light soy sauce (sub regular soy sauce if needed)</Ingredient>
+    <Ingredient measurement="TeaSpoon" quantity="1" for="Sauce">sesame oil</Ingredient>
+    <Ingredient measurement="TeaSpoon" quantity="1" for="Sauce">sugar</Ingredient>
+    <Ingredient measurement="Ounce" quantity="4" for="Lo Mein">uncooked ramen noodles</Ingredient>
+    <Ingredient measurement="TableSpoon" quantity="1" for="Lo Mein">sesame oil</Ingredient>
+    <Ingredient measurement="Unit" quantity="3" for="Lo Mein">green onions, chopped (separate green parts from white parts – you’ll use both separately)</Ingredient>
+    <Ingredient measurement="Cup" quantity="2" for="Lo Mein">julienne cut or chopped vegetables like carrots, red peppers, cabbage, bok choy, mushrooms, or broccoli</Ingredient>
+    <Ingredient measurement="TableSpoon" quantity="1" for="Lo Mein">mirin</Ingredient>
+    <Instruction>Sauce: Shake all the sauce ingredients together in a jar.</Instruction>
+    <Instruction>Noodles:  Cook the noodles according to package directions. Drain and set aside.</Instruction>
+    <Instruction>Lo Mein: Heat the sesame oil in a large wok or skillet. Add the green onions (white parts) and vegetables to the hot pan. Stir fry until fork-tender, about 5 minutes. Add the mirin to loosen the browned bits up off the bottom of the pan. Add the cooked noodles and about half of the sauce – toss around in the hot pan to combine. Add more sauce if needed (I usually gauge the amount of sauce I want by the color of the noodles – you want a medium brown color, not too light, not too dark). Serve topped with remaining green onions!</Instruction>
+    <Note>If you want to add a protein, stir fry it first, before the vegetables, then remove from heat while you cook the vegetables. Add back into the pan at the end with the noodles.</Note>
+  </Recipe>
+  <Recipe id="6" name="Perfect Omelet" prepTime="00:05:00" cookTime="00:05:00" yield="1 serving" url="https://www.delish.com/cooking/recipe-ideas/a24892843/how-to-make-omelet/">
+    <Ingredient measurement="Unit" quantity="2" for="">large eggs</Ingredient>
+    <Ingredient measurement="Unit" quantity="0" for="">Kosher salt  </Ingredient>
+    <Ingredient measurement="Unit" quantity="0" for="">Freshly ground black pepper</Ingredient>
+    <Ingredient measurement="Unit" quantity="0" for="">Pinch red pepper flakes</Ingredient>
+    <Ingredient measurement="TableSpoon" quantity="2" for="">butter</Ingredient>
+    <Ingredient measurement="Cup" quantity="0.25" for="">shredded cheddar</Ingredient>
+    <Ingredient measurement="TableSpoon" quantity="2" for="">freshly chopped chives</Ingredient>
+    <Instruction>In a medium bowl, beat eggs until no whites remain, then season with salt, pepper, and a pinch red pepper flakes.
+In a medium non-stick skillet over medium heat, melt butter. Pour in eggs and tilt pan so eggs fully cover the entire pan. As eggs start to set, use a rubber spatula to drag cooked edges into center of pan. Tilt pan to let uncooked egg fall to the edge of the pan. 
+Once the bottom is set, but top is still a little wet, sprinkle cheese and chives on one half of omelet. Fold other side over cheese and slide omelet onto a plate.   </Instruction>
+  </Recipe>
+  <Recipe id="7" name="Pan-Fried Salmon" prepTime="00:10:00" cookTime="00:00:00" yield="4 servings" url="https://www.delish.com/cooking/recipe-ideas/a23570664/pan-fried-salmon/">
+    <Ingredient measurement="Unit" quantity="4" for="">(6-oz.) salmon fillets, patted dry with a paper towel</Ingredient>
+    <Ingredient measurement="Unit" quantity="0" for="">Kosher salt</Ingredient>
+    <Ingredient measurement="Unit" quantity="0" for="">Freshly ground black pepper</Ingredient>
+    <Ingredient measurement="TableSpoon" quantity="2" for="">extra-virgin olive oil</Ingredient>
+    <Ingredient measurement="Cup" quantity="0.25" for="">white wine</Ingredient>
+    <Ingredient measurement="Unit" quantity="0" for="">Juice of 1 1/2 lemons, divided</Ingredient>
+    <Ingredient measurement="Unit" quantity="2" for="">cloves garlic, sliced</Ingredient>
+    <Ingredient measurement="Unit" quantity="0" for="">Pinch red pepper flakes</Ingredient>
+    <Ingredient measurement="TableSpoon" quantity="2" for="">butter</Ingredient>
+    <Ingredient measurement="Unit" quantity="1" for="">lemon, cut into rounds, for serving</Ingredient>
+    <Ingredient measurement="TableSpoon" quantity="2" for="">freshly chopped dill, for garnish</Ingredient>
+    <Instruction>In a large skillet over medium-high heat, heat oil. When oil is hot but not smoking, add salmon skin-side up and season with salt and pepper. Cook salmon until deeply golden, about 6 minutes, then flip over.
+Add wine, juice of 1 lemon, garlic, and red pepper flakes. Bring to a simmer and cook, basting salmon occasionally with a spoon. When salmon is opaque, remove from skillet. Add butter and remaining lemon juice to pan and whisk to combine with the sauce. Let simmer until thickened slightly, 2 minutes.
+Serve fish drizzled with pan sauce and topped with fresh lemon slices and dill.</Instruction>
+  </Recipe>
+  <Recipe id="8" name="Killer Grilled Pork Chop Marinade" prepTime="00:20:00" cookTime="00:10:00" yield="6 servings" url="https://cravingtasty.com/wprm_print/22404">
+    <Ingredient measurement="Pound" quantity="2" for="">boneless loin pork chops</Ingredient>
+    <Ingredient measurement="TableSpoon" quantity="2" for="">honey</Ingredient>
+    <Ingredient measurement="Unit" quantity="2" for="">cloves garlic</Ingredient>
+    <Ingredient measurement="Cup" quantity="0.25" for="">minced sweet onion</Ingredient>
+    <Ingredient measurement="Unit" quantity="1" for="">stalk green onion</Ingredient>
+    <Ingredient measurement="TeaSpoon" quantity="0.5" for="">white pepper</Ingredient>
+    <Ingredient measurement="TableSpoon" quantity="1" for="">dark soy sauce</Ingredient>
+    <Ingredient measurement="TableSpoon" quantity="3" for="">fish sauce</Ingredient>
+    <Ingredient measurement="TableSpoon" quantity="1" for="">olive oil</Ingredient>
+    <Ingredient measurement="TableSpoon" quantity="1" for="">lime juice</Ingredient>
+    <Instruction>Mix all ingredients for the marinade together in a small container. Using a hand blender, pulse a few times to partially liquefy the marinade. If you don't have a hand blender, simply mince the onion, garlic and green onion as finely as you can.</Instruction>
+    <Instruction>Place the pork chops and the marinade in a bowl, or a Ziploc bag and mix well, ensuring even coverage. Refrigerate overnight and up to 24 hours.</Instruction>
+    <Instruction>About half an hour prior to grilling, take the pork chops of the fridge and give them a good mix. Let rest at room temperature.</Instruction>
+    <Instruction>Preheat your grill to medium-high temperature. Depending on the thickness of the pork chops, grill for about 5-10 minutes, flipping frequently to avoid burning. Grilled pork chops are fully cooked once their internal temperature reaches 145F. Use an instant-read thermometer to get optimal results.</Instruction>
+    <Instruction>Once the pork chops are cooked through, removed them from the grill, cover with a foil tent and let rest for 5-10 minutes before serving. This will allow the meat to reabsorb some of the water lost during grilling.</Instruction>
+  </Recipe>
+  <Recipe id="9" name="10-Minute Pan-Fried Chicken Breast" prepTime="00:04:00" cookTime="00:06:00" yield="2 servings" url="https://cravingtasty.com/wprm_print/16109">
+    <Ingredient measurement="Unit" quantity="2" for="">chicken breasts</Ingredient>
+    <Ingredient measurement="TableSpoon" quantity="2" for="">olive oil</Ingredient>
+    <Ingredient measurement="TeaSpoon" quantity="1" for="">kosher salt</Ingredient>
+    <Ingredient measurement="TeaSpoon" quantity="0.5" for="">black pepper</Ingredient>
+    <Ingredient measurement="Unit" quantity="2" for="">cloves garlic</Ingredient>
+    <Ingredient measurement="TeaSpoon" quantity="1" for="">parsley</Ingredient>
+    <Ingredient measurement="TeaSpoon" quantity="0.5" for="">thyme</Ingredient>
+    <Ingredient measurement="TeaSpoon" quantity="0.25" for="">cayenne pepper</Ingredient>
+    <Instruction>Using a sharp knife, cut the chicken breasts in half lengthwise. You want to end up with 4, equally thin, chicken cutlets. Uniformly thick chicken breast will cook faster and more uniformly.</Instruction>
+    <Instruction>Rub the chicken breasts with one tablespoon oil, then season with salt, pepper, thyme, garlic, parsley and cayenne pepper.Tip: the seasoning mix here is fairly basic but gives the chicken good flavor. I vary it depending on what I have, or want to use, and often add fresh herbs. I find basil, oregano and coriander to be great in this recipe. Spice mixes like Italian, herbs de provence are also fabulous. If you like sesame oil, use it instead of olive oil for rubbing, but reduce the amount to about teaspoon, or to taste.</Instruction>
+    <Instruction>Heat one tablespoon of oil in a non-stick skillet over medium-high heat. Add the chicken breasts and partially cover the pan with a lid, leaving about a 1/2" - 1" crack.&amp;nbsp;Tip: if using a regular skillet, double the amount of oil. You can also use 50/50 oil and butter for better flavor.</Instruction>
+    <Instruction>Cook for 3 minutes undisturbed. At this time you will notice that the tops of the breasts have turned white. Flip the breasts, partially cover and cook for another 3 minutes.</Instruction>
+    <Instruction>Remove from the pan and serve immediately or keep warm until ready to eat.</Instruction>
+  </Recipe>
+  <Recipe id="10" name="Scrambled eggs - soft and creamy, just as they should be!" prepTime="00:01:00" cookTime="00:01:00" yield="2 servings" url="https://www.recipetineats.com/wprm_print/48118">
+    <Ingredient measurement="Unit" quantity="4" for="">eggs</Ingredient>
+    <Ingredient measurement="TableSpoon" quantity="2" for="">milk</Ingredient>
+    <Ingredient measurement="TeaSpoon" quantity="0.25" for="">salt</Ingredient>
+    <Ingredient measurement="Unit" quantity="2" for="">grinds black pepper</Ingredient>
+    <Ingredient measurement="TableSpoon" quantity="1" for="">butter</Ingredient>
+    <Ingredient measurement="Unit" quantity="4" for="Serving">bread</Ingredient>
+    <Instruction>Use a non stick skillet or well seasoned cast iron pan (about 25cm / 10") and a rubber spatular (or flat edge wooden spoon).</Instruction>
+    <Instruction>Whisk together eggs, milk, salt and pepper.</Instruction>
+    <Instruction>Melt butter over medium heat (Note 1), then pour egg in.</Instruction>
+    <Instruction>Wait 5 seconds, then start leisurely pushing the rubber spatula back and forth in long strokes, and all around the skillet edges, to push the set egg out of the way and let raw egg run onto the skillet to cook. After 30 seconds or so, start adding some folding action too.</Instruction>
+    <Instruction>Cook for 60 seconds in total until you have a pile of soft, custardy scrambled egg folds ("curds") and no raw egg leaking on the edges of the pile.</Instruction>
+    <Instruction>Take it off the stove when it's still a bit undercooked for your taste.</Instruction>
+    <Instruction>Gently push /fold the eggs for another 10 seconds - it will finish cooking with residual pan heat - then slide onto hot toasted crusty bread slathered with butter. </Instruction>
+    <Instruction>Sprinkle with extra pepper then devour immediately! For a touch of garnish, look no further than an 80's style sprig of curly parsley. 👌🏻</Instruction>
+    <Note>1. Milk - optional, makes the eggs a bit more creamy but you can still make wonderful scrambled eggs without.
+Cream? Some people enjoy cream instead of milk - I find it unnecessarily rich but it's an option (same amount as milk - or halve).
+Water? With older eggs (as some grocery eggs can be) are already watery and added water can exacerbate the wateriness. Milk works better, more consistently.
+2. Homemade toastable bread options:
+
+World's easiest crusty Artisan bread
+No yeast sandwich bread
+Irish soda bread (a no yeast bread)
+
+3. TIPS:
+
+Stove heat - use medium low if your stove is strong/hot.
+Use a smaller skillet if cooking less eggs. ~25cm/10" for 4 eggs, ~20cm/8" or less for 2 eggs.
+Non stick or well seasoned cast iron skillet highly recommended for ease - eggs are the ultimate food glue.
+Scrambled eggs should not be browned or crispy at all, it should be yellow and creamy all the way through.
+DO NOT viciously stir around in circles, or zig zag frantically back and forth! This will create rough, "chopped up" dried scrambled eggs, rather than soft and creamy. Use gentle, leisurely strokes.
+Use pushing / folding / turning motions with the rubber spatula so you get soft, creamy scrambled egg curds, rather than a raggedy chopped up dry pile of scrambled eggs.
+
+4. Nutrition per serving (2 eggs, 1/2 tbsp butter), excludes bread.</Note>
+  </Recipe>
+  <Recipe id="11" name="Chicken Fried Rice" prepTime="00:25:00" cookTime="00:25:00" yield="6 servings" url="https://cravingtasty.com/wprm_print/21224">
+    <Ingredient measurement="Unit" quantity="6" for="Step 1">chicken thighs</Ingredient>
+    <Ingredient measurement="TeaSpoon" quantity="1" for="Step 1">sesame oil</Ingredient>
+    <Ingredient measurement="TeaSpoon" quantity="1" for="Step 1">kosher salt</Ingredient>
+    <Ingredient measurement="TeaSpoon" quantity="1" for="Step 1">garlic powder</Ingredient>
+    <Ingredient measurement="TeaSpoon" quantity="1" for="Step 1">onion powder</Ingredient>
+    <Ingredient measurement="TeaSpoon" quantity="0.25" for="Step 1">black pepper</Ingredient>
+    <Ingredient measurement="TableSpoon" quantity="2" for="Step 1">cooking oil</Ingredient>
+    <Ingredient measurement="TableSpoon" quantity="2" for="Step 2">peanut oil</Ingredient>
+    <Ingredient measurement="Cup" quantity="0.75" for="Step 2">finely diced carrots</Ingredient>
+    <Ingredient measurement="Cup" quantity="1" for="Step 2">finely diced white onion</Ingredient>
+    <Ingredient measurement="Unit" quantity="3" for="Step 2">garlic cloves</Ingredient>
+    <Ingredient measurement="TableSpoon" quantity="1" for="Step 2">fresh ginger root</Ingredient>
+    <Ingredient measurement="Cup" quantity="4" for="Step 3">cooked jasmine rice</Ingredient>
+    <Ingredient measurement="TableSpoon" quantity="2" for="Step 3">soy sauce</Ingredient>
+    <Ingredient measurement="TableSpoon" quantity="3" for="Step 3">unsalted butter</Ingredient>
+    <Ingredient measurement="TeaSpoon" quantity="0.5" for="Step 3">white pepper</Ingredient>
+    <Ingredient measurement="Unit" quantity="2" for="Step 4">eggs</Ingredient>
+    <Ingredient measurement="Cup" quantity="0.3333333333333333" for="Step 5">water chestnuts</Ingredient>
+    <Ingredient measurement="Cup" quantity="0.5" for="Step 5">green onions</Ingredient>
+    <Ingredient measurement="TeaSpoon" quantity="1" for="Step 5">sesame oil</Ingredient>
+    <Instruction>Rub the chicken thighs with sesame oil, then season with salt, pepper, and garlic and onion powders. Heat a non-stick frying pan with two tablespoons of oil over medium low heat, add the chicken skin side down. Cover, leaving just a small crack, and cook for 4-5 minutes, until well-browned. Flip the chicken pieces, cover and cook for another 4-5 minutes or until cooked to at least 165F internal temperature. If the chicken is browning too fast, flip more frequently or lower the temperature. Once the chicken is done, remove from heat, let cool until you can handle it by hand, remove bones and cut into bite size pieces.</Instruction>
+    <Instruction>In a wok or a large non-stick pan, heat peanut oil (or any cooking oil) over medium-high heat. Add the onions and carrots, and saute for about 2-3 minutes, frequently stirring, until lightly browned. To help the vegetables soften up, lower the heat to medium, add two tablespoons of water, and cover with a lid. Let saute for another 3-5 minutes, stirring every 1 minute or so, until the vegetables are soft enough. Add the garlic and the ginger, and saute for another minute, or until the garlic is fragrant.</Instruction>
+    <Instruction>Add the rice, soy sauce, butter and white pepper. Mix with the vegetables and saute for about 3-4 minutes, constantly stirring and breaking up any rice clumps. Remove from heat and set aside.</Instruction>
+    <Instruction>In a separate non-stick pan, cook the eggs slightly, as you would scrambled eggs, constantly scraping and mixing with a spatula. Immediately transfer to the rice and vegetable mix.</Instruction>
+    <Instruction>Place the wok with the rice and the vegetable mix, and the eggs, back on the stove over medium heat. Add the chicken, water chestnuts, green onions and sesame oil. Gently fold into the rice mix and saute, gently stirring, for 1 minute, to warm up the chicken. Remove from heat and serve immediately.</Instruction>
+  </Recipe>
+  <Recipe id="12" name="Killer Chicken Thigh Marinade" prepTime="00:15:00" cookTime="00:30:00" yield="8 servings" url="https://cravingtasty.com/wprm_print/12023">
+    <Ingredient measurement="Unit" quantity="8" for="">bone-in, skin-on chicken thighs</Ingredient>
+    <Ingredient measurement="TableSpoon" quantity="2" for="">olive oil</Ingredient>
+    <Ingredient measurement="TableSpoon" quantity="1" for="">sesame oil</Ingredient>
+    <Ingredient measurement="TableSpoon" quantity="4" for="">low sodium soy sauce</Ingredient>
+    <Ingredient measurement="TableSpoon" quantity="1" for="">Worcestershire sauce</Ingredient>
+    <Ingredient measurement="TableSpoon" quantity="2" for="">lemon juice</Ingredient>
+    <Ingredient measurement="TableSpoon" quantity="5" for="">honey </Ingredient>
+    <Ingredient measurement="Unit" quantity="6" for="">cloves garlic</Ingredient>
+    <Ingredient measurement="TeaSpoon" quantity="0.5" for="">black pepper</Ingredient>
+    <Ingredient measurement="TeaSpoon" quantity="2" for="">kosher salt</Ingredient>
+    <Instruction>Mix all ingredients for the marinade together in a large bowl or a plastic Ziploc bag. Add the chicken and make sure that every piece is covered evenly. Marinate in a fridge for at least 30 minutes to 2 hours or, better yet, overnight.</Instruction>
+    <Instruction>Preheat oven to 450 degrees F.</Instruction>
+    <Instruction>Place the chicken and all of the marinade in a baking dish. Bake uncovered at 450 degrees F for 25-30 minutes with the skin side up, until the internal temperature reaches 165°F. To make sure the chicken tops are nicely browned and do not dry out, baste the chicken thighs in the juices and marinade about 15-20 minutes into baking.</Instruction>
+    <Instruction>To get a nicely browned, crisped up skin, turn on the broiler for 2-3 minutes when the thighs are almost done cooking. Monitor broiling very closely as the tops may burn if broiled for too long.</Instruction>
+  </Recipe>
+  <Recipe id="13" name="One pot creamy tomato beef pasta" prepTime="00:10:00" cookTime="00:20:00" yield="4 servings" url="https://www.recipetineats.com/wprm_print/116417">
+    <Ingredient measurement="TableSpoon" quantity="1.5" for="">olive oil</Ingredient>
+    <Ingredient measurement="Unit" quantity="2" for="">garlic cloves</Ingredient>
+    <Ingredient measurement="Unit" quantity="1" for="">onion</Ingredient>
+    <Ingredient measurement="Gram" quantity="500" for="">beef mince / ground beef</Ingredient>
+    <Ingredient measurement="TeaSpoon" quantity="2" for="">Italian herbs</Ingredient>
+    <Ingredient measurement="TableSpoon" quantity="2" for="">tomato paste</Ingredient>
+    <Ingredient measurement="Gram" quantity="400" for="">can crushed tomatoes</Ingredient>
+    <Ingredient measurement="TeaSpoon" quantity="0.5" for="">red pepper flakes</Ingredient>
+    <Ingredient measurement="TeaSpoon" quantity="1.5" for="">cooking salt/kosher salt</Ingredient>
+    <Ingredient measurement="TeaSpoon" quantity="0.5" for="">black pepper</Ingredient>
+    <Ingredient measurement="Unit" quantity="1" for="">chicken stock/broth</Ingredient>
+    <Ingredient measurement="Gram" quantity="350" for="">fusilli, penne, elbow macaroni</Ingredient>
+    <Ingredient measurement="Cup" quantity="0.75" for="">thickened / heavy cream</Ingredient>
+    <Ingredient measurement="Unit" quantity="1" for="Serving">Parmesan cheese</Ingredient>
+    <Ingredient measurement="Unit" quantity="1" for="Serving">Parsley</Ingredient>
+    <Instruction>Sauté - Heat the oil on high heat in a large heavy-based pot. Cook garlic and onion for 1 1/2 minutes.</Instruction>
+    <Instruction>Cook beef &amp; seasonings - Add beef and cook, breaking it up as you go, until you can no longer see red meat. Add the Italian herbs and cook for 30 seconds, then add tomato paste and cook for 1 minute to cook out the raw flavour.</Instruction>
+    <Instruction>All in - Add crushed tomato, chicken stock, salt, pepper and red pepper flakes, if using. Stir, then add the pasta.</Instruction>
+    <Instruction>Cook 15 min - Bring the liquid to a simmer, then cook for 15 minutes, stirring every couple of minutes then more frequently towards the end (ensure pasta doesn't stick to base) until the pasta is just about cooked.</Instruction>
+    <Instruction>Creamy - Add cream, then simmer for a further 1 to 2 minutes. It will still be quite saucy - this is what you want! Pasta absorbs liquid quickly, so it will still be nice and oozy when you start eating.</Instruction>
+    <Instruction>Serve - Remove from the stove. Give it a good stir then ladle into bowls. Serve with parmesan and parsley.</Instruction>
+    <Note>1. Italian Herbs - Just a store bought mix, very common at grocery stores. If you don't have any, just use a mix of dried oregano, parsley, basil. Or sub with a teaspoon of Worcestershire sauce.
+2. Chicken stock/broth - Tastier than water! I stock up when on sale. Economical alternative - I recommend using Vegeta stock powder (info here - I use it regularly) or Chinese chicken stock powder (Knorr) plus water. I prefer the flavour of these over other Western stock powders. 
+3. Any short pasta will work here, like macaroni, penne etc but not tiny ones like risoni/orzo. If using long pasta, easiest to break in half and you can cook about 400g/14oz (a little more than short pasta).
+4. Leftovers will keep for 3 days in the fridge. Not suitable for freezing.
+Nutrition per serving, assuming 5 servings using 90% lean beef.</Note>
+  </Recipe>
+  <Recipe id="14" name="Garlic Butter Shrimp Scampi" prepTime="00:05:00" cookTime="00:05:00" yield="4 servings" url="https://cafedelites.com/wprm_print/49997">
+    <Ingredient measurement="Unit" quantity="2" for="">olive oil</Ingredient>
+    <Ingredient measurement="TableSpoon" quantity="4" for="">butter</Ingredient>
+    <Ingredient measurement="Unit" quantity="4" for="">large garlic cloves,</Ingredient>
+    <Ingredient measurement="Pound" quantity="1.25" for="">(600 grams) large shrimp</Ingredient>
+    <Ingredient measurement="Unit" quantity="1" for="">Salt and fresh ground black pepper</Ingredient>
+    <Ingredient measurement="Cup" quantity="0.25" for="">dry white wine</Ingredient>
+    <Ingredient measurement="TeaSpoon" quantity="0.5" for="">crushed red pepper flakes</Ingredient>
+    <Ingredient measurement="TableSpoon" quantity="2" for="">lemon juice</Ingredient>
+    <Ingredient measurement="Cup" quantity="0.25" for="">chopped parsley</Ingredient>
+    <Instruction>Heat olive oil and 2 tablespoons of butter in a large pan or skillet. Add garlic and sauté until fragrant (about 30 seconds - 1 minute). Then add the shrimp, season with salt and pepper to taste and sauté for 1-2 minutes on one side (until just beginning to turn pink), then flip. </Instruction>
+    <Instruction>Pour in wine (or broth), add red pepper flakes (if using). Bring to a simmer for 1-2 minutes or until wine reduces by about half and the shrimp is cooked through (don't over cook your shrimp).</Instruction>
+    <Instruction>Stir in the remaining butter, lemon juice and parsley and take off heat immediately.</Instruction>
+    <Instruction>Serve over rice, pasta, garlic bread or steamed vegetables (cauliflower, broccoli, zucchini noodles).</Instruction>
+  </Recipe>
+  <Recipe id="15" name="Easy Lo Mein" prepTime="00:10:00" cookTime="00:15:00" yield="4 servings" url="https://damndelicious.net/wprm_print/easy-lo-mein/">
+    <Ingredient measurement="Ounce" quantity="8" for="">lo mein egg noodles*</Ingredient>
+    <Ingredient measurement="TableSpoon" quantity="1" for="">olive oil</Ingredient>
+    <Ingredient measurement="Unit" quantity="2" for="">cloves garlic</Ingredient>
+    <Ingredient measurement="Cup" quantity="2" for="">cremini mushrooms</Ingredient>
+    <Ingredient measurement="Unit" quantity="1" for="">red bell pepper</Ingredient>
+    <Ingredient measurement="Unit" quantity="1" for="">carrot</Ingredient>
+    <Ingredient measurement="Cup" quantity="0.5" for="">snow peas</Ingredient>
+    <Ingredient measurement="Cup" quantity="3" for="">baby spinach</Ingredient>
+    <Ingredient measurement="TableSpoon" quantity="2" for="For the sauce">reduced sodium soy sauce</Ingredient>
+    <Ingredient measurement="TeaSpoon" quantity="2" for="For the sauce">sugar</Ingredient>
+    <Ingredient measurement="TeaSpoon" quantity="1" for="For the sauce">sesame oil</Ingredient>
+    <Ingredient measurement="TeaSpoon" quantity="0.5" for="For the sauce">ground ginger</Ingredient>
+    <Ingredient measurement="TeaSpoon" quantity="0.5" for="For the sauce">Sriracha</Ingredient>
+    <Instruction>In a small bowl, whisk together soy sauce, sugar, sesame oil, ginger and Sriracha; set aside.</Instruction>
+    <Instruction>In a large pot of boiling water, cook noodles according to package instructions; drain well.</Instruction>
+    <Instruction>Heat olive oil in a large cast iron skillet over medium high heat. Add garlic, mushrooms, bell pepper and carrot. Cook, stirring frequently, until tender, about 3-4 minutes. Stir in snow peas and spinach until the spinach has wilted, about 2-3 minutes.</Instruction>
+    <Instruction>Stir in egg noodles and soy sauce mixture, and gently toss to combine.</Instruction>
+    <Instruction>Serve immediately.</Instruction>
+    <Note>*Spaghetti, linguine or bucatini can be substituted. 
+</Note>
+  </Recipe>
+  <Recipe id="16" name="One pot creamy tomato beef pasta" prepTime="00:10:00" cookTime="00:20:00" yield="4 servings" url="https://www.recipetineats.com/wprm_print/one-pot-creamy-tomato-beef-pasta">
+    <Ingredient measurement="TableSpoon" quantity="1.5" for="">olive oil</Ingredient>
+    <Ingredient measurement="Unit" quantity="2" for="">garlic cloves</Ingredient>
+    <Ingredient measurement="Unit" quantity="1" for="">onion</Ingredient>
+    <Ingredient measurement="Gram" quantity="500" for="">beef mince / ground beef</Ingredient>
+    <Ingredient measurement="TeaSpoon" quantity="2" for="">Italian herbs</Ingredient>
+    <Ingredient measurement="TableSpoon" quantity="2" for="">tomato paste</Ingredient>
+    <Ingredient measurement="Gram" quantity="400" for="">can crushed tomatoes</Ingredient>
+    <Ingredient measurement="TeaSpoon" quantity="0.5" for="">red pepper flakes</Ingredient>
+    <Ingredient measurement="TeaSpoon" quantity="1.5" for="">cooking salt/kosher salt</Ingredient>
+    <Ingredient measurement="TeaSpoon" quantity="0.5" for="">black pepper</Ingredient>
+    <Ingredient measurement="Unit" quantity="1" for="">chicken stock/broth</Ingredient>
+    <Ingredient measurement="Gram" quantity="350" for="">fusilli, penne, elbow macaroni</Ingredient>
+    <Ingredient measurement="Cup" quantity="0.75" for="">thickened / heavy cream</Ingredient>
+    <Ingredient measurement="Unit" quantity="1" for="Serving">Parmesan cheese</Ingredient>
+    <Ingredient measurement="Unit" quantity="1" for="Serving">Parsley</Ingredient>
+    <Instruction>Sauté - Heat the oil on high heat in a large heavy-based pot. Cook garlic and onion for 1 1/2 minutes.</Instruction>
+    <Instruction>Cook beef &amp; seasonings - Add beef and cook, breaking it up as you go, until you can no longer see red meat. Add the Italian herbs and cook for 30 seconds, then add tomato paste and cook for 1 minute to cook out the raw flavour.</Instruction>
+    <Instruction>All in - Add crushed tomato, chicken stock, salt, pepper and red pepper flakes, if using. Stir, then add the pasta.</Instruction>
+    <Instruction>Cook 15 min - Bring the liquid to a simmer, then cook for 15 minutes, stirring every couple of minutes then more frequently towards the end (ensure pasta doesn't stick to base) until the pasta is just about cooked.</Instruction>
+    <Instruction>Creamy - Add cream, then simmer for a further 1 to 2 minutes. It will still be quite saucy - this is what you want! Pasta absorbs liquid quickly, so it will still be nice and oozy when you start eating.</Instruction>
+    <Instruction>Serve - Remove from the stove. Give it a good stir then ladle into bowls. Serve with parmesan and parsley.</Instruction>
+    <Note>1. Italian Herbs - Just a store bought mix, very common at grocery stores. If you don't have any, just use a mix of dried oregano, parsley, basil. Or sub with a teaspoon of Worcestershire sauce.
+2. Chicken stock/broth - Tastier than water! I stock up when on sale. Economical alternative - I recommend using Vegeta stock powder (info here - I use it regularly) or Chinese chicken stock powder (Knorr) plus water. I prefer the flavour of these over other Western stock powders. 
+3. Any short pasta will work here, like macaroni, penne etc but not tiny ones like risoni/orzo. If using long pasta, easiest to break in half and you can cook about 400g/14oz (a little more than short pasta).
+4. Leftovers will keep for 3 days in the fridge. Not suitable for freezing.
+Nutrition per serving, assuming 5 servings using 90% lean beef.</Note>
+  </Recipe>
+  <Recipe id="17" name="A great Chicken Marinade (great grilled or pan seared!)" prepTime="00:05:00" cookTime="00:10:00" yield="4 servings" url="https://www.recipetineats.com/wprm_print/a-great-chicken-marinade-great-grilled-or-pan-seared">
+    <Ingredient measurement="Gram" quantity="700" for="">chicken breast, tenderloins or thigh</Ingredient>
+    <Ingredient measurement="TableSpoon" quantity="2" for="Chicken marinade (subs Note 3)">honey OR brown sugar</Ingredient>
+    <Ingredient measurement="TableSpoon" quantity="1" for="Chicken marinade (subs Note 3)">olive oil</Ingredient>
+    <Ingredient measurement="TableSpoon" quantity="5" for="Chicken marinade (subs Note 3)">soy sauce</Ingredient>
+    <Ingredient measurement="TableSpoon" quantity="2" for="Chicken marinade (subs Note 3)">lemon juice</Ingredient>
+    <Ingredient measurement="TeaSpoon" quantity="2" for="Chicken marinade (subs Note 3)">Worcestershire sauce</Ingredient>
+    <Ingredient measurement="Unit" quantity="4" for="Chicken marinade (subs Note 3)">garlic cloves</Ingredient>
+    <Ingredient measurement="TeaSpoon" quantity="1" for="Chicken marinade (subs Note 3)">dried oregano</Ingredient>
+    <Ingredient measurement="TeaSpoon" quantity="0.5" for="Chicken marinade (subs Note 3)">black pepper</Ingredient>
+    <Ingredient measurement="Unit" quantity="1" for="Garnishes (optional)">Finely chopped parsley</Ingredient>
+    <Ingredient measurement="Unit" quantity="1" for="Garnishes (optional)">Lemon slices</Ingredient>
+    <Instruction>Recommended: Pound breast to even thickness using a meat pounder, rolling pin, or fist. OR cut large ones in half horizontally to form 2 cutlets (steaks) for each.</Instruction>
+    <Instruction>Mix marinade in a ziplock bag (or container in which chicken fits snugly). Add chicken. </Instruction>
+    <Instruction>Marinate 3 hours to overnight, though even 30 minutes is effective. (Note 2)</Instruction>
+    <Instruction>Heat 1 tbsp olive oil in a large skillet over medium high heat, and cook chicken per times below until deep golden (see video). If browning too quickly, lower heat.</Instruction>
+    <Instruction>Transfer to serving plate, cover loosely with foil and rest for 3 minutes before serving, garnished with parsley and lemon slices if desired. </Instruction>
+    <Instruction>Whole breast and boneless thighs: 3 - 4 minutes each side (internal temp 165F/75C)</Instruction>
+    <Instruction>Cutlets and tenderloin - 2 minutes each side</Instruction>
+    <Note>1. Chicken - marinade will work for any cut of chicken thought I mostly use skinless boneless cuts. 
+Easiest to BAKE bone in cuts (breast, legs, thighs) - see Note 4.
+2. Quick Marinade 30 min to 1 hr - cut breasts in half horizontally to form 2 thin steaks. For whole thighs or breast, poke a few holes in each breast using a fork. For drumsticks, cut a couple of slashes with knife.
+3. Marinade subs:
+
+Brown sugar - sub 2 tbsp white sugar, 1.5 tbsp honey, maple syrup
+Soy - any normal, all purpose soy or light soy good here, or tamari, mushroom soy sauce. If you have sweet soy or kecap manis, skip sugar. Dark soy sauce not recommended (label will say "dark soy). 
+No soy? Dissolve 1 tsp salt in 4 tbsp water, then use in place of soy sauce.
+Only got DARK soy? Use 2 tbsp then add 3/4 tsp salt and 3 tbsp water instead of 5 tbsp soy sauce.
+Lemon - sub with less sharp vinegars like cider vinegar, white wine or red wine vinegar, rice vinegar. Or 1.5 tbsp other vinegars (normal white vinegar, balsamic)
+Worcestershire - dollop of ketchup or BBQ sauce would be a decent sub there! Say 2 tbsp, then cut down sugar. HP Sauce, steak sauce or other savoury sauces also good.
+Garlic - 3 tsp from jar, or 3/4 tsp dried garlic powder good here. Also 1/4 tsp onion powder would be nice too.
+Dried herbs - anything is the go here, go with what you like. Fresh won't really work here, too delicate unless doing a short marinade. Exception - fresh rosemary is terrific, 1 tsp finely chopped.
+
+4. Baking directions - stove is best to get nice browning, but to bake, cook as follows:
+
+Breast and boneless thighs - bake 18 minutes at 425F/220C oven, or internal temperature is 165F/75C, followed by quick grill/broil on high to brown
+Drumsticks, wings and bone in thighs - 50 minutes at 180C/350F, basting with juices once or twice
+
+5. Storage - Cooked chicken will be good for 3 to 4 days in the fridge, I always reheat in microwave because it keeps it moist. If keeping cooked chicken, boneless thigh is best (stays juiciest).
+Freeze raw chicken in marinade as soon as you make it up (chicken will marinade while thawing!). Thaw then cook per recipe.</Note>
+  </Recipe>
+  <Recipe id="18" name="Oven Baked Pork Chops with Potatoes" prepTime="00:10:00" cookTime="00:30:00" yield="4 servings" url="https://www.recipetineats.com/wprm_print/oven-baked-pork-chops-with-potatoes">
+    <Ingredient measurement="TeaSpoon" quantity="1" for="Rub">Worcestershire Sauce</Ingredient>
+    <Ingredient measurement="TableSpoon" quantity="2" for="Rub">ketchup</Ingredient>
+    <Ingredient measurement="TableSpoon" quantity="1" for="Rub">soy sauce</Ingredient>
+    <Ingredient measurement="TableSpoon" quantity="2" for="Rub">brown sugar</Ingredient>
+    <Ingredient measurement="TableSpoon" quantity="1" for="Rub">olive oil</Ingredient>
+    <Ingredient measurement="Unit" quantity="1" for="Rub">clove garlic,</Ingredient>
+    <Ingredient measurement="TeaSpoon" quantity="2" for="Rub">apple cider vinegar</Ingredient>
+    <Ingredient measurement="Unit" quantity="4" for="Chops">pork chops / cutlets</Ingredient>
+    <Ingredient measurement="Gram" quantity="800" for="Chops">baby potatoes</Ingredient>
+    <Ingredient measurement="TableSpoon" quantity="1" for="Chops">olive oil</Ingredient>
+    <Ingredient measurement="Unit" quantity="1" for="Chops">Salt &amp; pepper</Ingredient>
+    <Instruction>Preheat oven to 220C / 430F (standard oven) or 200C / 390F (fan forced / convection).</Instruction>
+    <Instruction>Toss potatoes in oil, sprinkle with salt and pepper. Scatter on baking tray.</Instruction>
+    <Instruction>Place in oven for 15 minutes (giving them a head start).</Instruction>
+    <Instruction>Meanwhile, mix the Rub ingredients together in a small bowl.</Instruction>
+    <Instruction>Slather the pork on both sides with the Rub, reserving some Rub for basting. (See notes for marinating)</Instruction>
+    <Instruction>Take the tray out of the oven. Toss potatoes then push them to the edge.</Instruction>
+    <Instruction>Place pork on tray. Bake for 15 minutes. </Instruction>
+    <Instruction>Remove tray from oven, flick to broiler/grill on high (shelf about 20cm/8" from heat source).</Instruction>
+    <Instruction>Flip pork, spoon over reserved rub and dab on sides. (Note 4). Broil 7 - 10 minutes until pretty well caramelised.</Instruction>
+    <Instruction>Remove from oven. Use a brush to get the golden juices off the tray and dab it onto the pork - this is key for flavour and colour! Pop it back under the broiler for a couple of minutes to finish off.</Instruction>
+    <Instruction>Serve, scraping the juices on the tray onto the pork, then garnish with parsley if desired. </Instruction>
+    <Note>Recipe update: Originally published September 2016. Updated February 2019 to improve. Original recipe called for 10 minute baking x 2, followed by broil/grill to caramelise surface. Updated recipe calls for 15 minutes pork bake, then finished with just broiling/grilling. Better, more even caramelisation using this method!
+1. Ketchup - Can also use Tomato Sauce condiment (American readers - don't use what you know as Tomato Sauce, use Ketchup!).
+2.  Soy sauce - I use normal soy sauce (Kikkoman). This can be substituted with 2 1/2 tsp light soy sauce. Do not use dark soy sauce - flavour is too strong.
+3. Cider vinegar - Can be substituted with any clear or neutral flavoured vinegar. Don't use balsamic.
+4. Pork - This can be made with any pork chops. Bone in is better because it's juicier. Cook time will differ depending on size of cutlets - my cook time is based on 200g/7oz pork chops with bone in. For 350g/12oz, bake pork for 15 minutes + 10 minute broil/grill + extra minute for post basting caraemsliation.
+Also see the chicken version.
+5. Potatoes - Make sure the potatoes are no larger than 3cm / 1 1/4" diameter otherwise they won't cook in the prescribed time. You can either increase the initial bake time OR cut the larger ones which is what I did.
+6. Marinating option - Optional, not required but can do. Place in a ziplock bag, add the pork and massage from the outside to coat the pork in the Rub. Refrigerate for up to 24 hours. If freezing, put the bag straight in the freezer, then defrost before using. It will marinate while defrosting.
+7. Nutrition per serving including potatoes, assuming this is made with trimmed pork cutlets as pictured.</Note>
+  </Recipe>
+  <Recipe id="19" name="Garlic Butter Salmon recipe" prepTime="00:05:00" cookTime="00:08:00" yield="4 servings" url="https://www.recipetineats.com/wprm_print/garlic-butter-salmon-recipe">
+    <Ingredient measurement="Unit" quantity="4" for="">salmon fillets</Ingredient>
+    <Ingredient measurement="TeaSpoon" quantity="0.5" for="">salt</Ingredient>
+    <Ingredient measurement="TeaSpoon" quantity="0.25" for="">black pepper</Ingredient>
+    <Ingredient measurement="TableSpoon" quantity="1.5" for="">olive oil</Ingredient>
+    <Ingredient measurement="TableSpoon" quantity="1" for="">garlic (~2 cloves)</Ingredient>
+    <Ingredient measurement="Gram" quantity="90" for="">salted butter</Ingredient>
+    <Ingredient measurement="TeaSpoon" quantity="1" for="">lemon juice</Ingredient>
+    <Ingredient measurement="TeaSpoon" quantity="2" for="">parsley</Ingredient>
+    <Instruction>Season salmon: Take salmon out of fridge 30 minutes prior to cooking. Sprinkle both sides with salt and pepper.</Instruction>
+    <Instruction>Sear salmon 3 mins: Heat oil in large non stick skillet over medium-high heat. Add salmon, presentation side (ie. curved side) down, and cook for 3 minutes until golden.</Instruction>
+    <Instruction>Turn, cook 1 min, then add butter: Turn salmon and cook the other side for 1 minute. THEN put the butter in. </Instruction>
+    <Instruction>Baste 1 1/2 minutes: Once butter is melted and foaming, add garlic and immediately start spooning the bubbling butter continuously over the salmon for 1 1/2 minutes. To do this, tilt the pan slightly so the butter pools on one side. Use a large spoon to scoop the butter up and spoon it over the salmon.</Instruction>
+    <Instruction>Remove salmon from stove: Check Internal temperature of salmon. It should be 50°C/122°F for medium-rare (optimum juiciness pull temp). Remove salmon to a plate. Rest for 3 minutes – it will rise to 53°C/127°F.  (See Note 2 for internal temperatures)</Instruction>
+    <Instruction>Add lemon juice to butter: Put pan back on unlit stove to keep butter hot. Add lemon juice.</Instruction>
+    <Instruction>Serve: Place salmon on serving plates. Spoon over butter (be judicious, it's rich!), garnish with a sprinkle of parsley. Pictured in the post with Cauliflower Mash and leafy greens with French Vinaigrette.</Instruction>
+    <Note>1. Salmon – Using skinless salmon means more exposed flesh, so the butter will seep in better into the salmon flesh. But it's really not a big deal if you only have skin-on salmon: Start cooking skin side UP, then flip and start basting with skin side is down.
+Other fish – You can use this method of cooking for any fish suitable for pan frying.
+2. Internal temperature of cooked salmon:
+
+3. Leftovers – Cooked salmon keeps for 3 to 4 days in the fridge. Gently reheat in oven or microwave, or use flaked at room temperature in salads, sandwiches etc.
+4. Nutrition per serving, assuming all the butter is consumed.
+ </Note>
+  </Recipe>
+</root>

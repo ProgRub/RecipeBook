@@ -39,10 +39,9 @@ namespace WebApp.Controllers
         // POST: ScrapeRecipeController/SaveRecipe
         [HttpPost("ScrapeRecipe/Result")]
         [ValidateAntiForgeryToken]
-        public ActionResult SaveRecipe()
+        public ActionResult Save()
         {
-            Debug.WriteLine("HERE");
-            //ServicesFacade.SaveDatabase();
+            ServicesFacade.SaveDatabase();
 
             return RedirectToAction("Index");
         }
