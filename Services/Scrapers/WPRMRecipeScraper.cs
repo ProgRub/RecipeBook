@@ -134,7 +134,7 @@ namespace Services.Scrapers
 		public override IList<string> GetNotes()
 		{
 			return HtmlDocument.DocumentNode.Descendants("div")
-				.Where(x => x.GetAttributeValue("class", "") == "wprm-recipe-notes")
+				.First(x => x.GetAttributeValue("class", "") == "wprm-recipe-notes").Descendants("span")
 				.Select(noteNode => GetDecodedInnerText(noteNode))
 				.ToList();
 		}

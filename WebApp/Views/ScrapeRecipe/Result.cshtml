@@ -1,16 +1,51 @@
 ﻿@model Services.DTOs.RecipeDTO
 
 
-<div class="text-center">
-	<ul>
-		@foreach (var component in Model.IngredientsByComponent)
+<div>
+	<table>
+		<thead>
+			<tr>
+				<th>Prep Time</th>
+				<th>Cook Time</th>
+				<th>Yields</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>@Model.PrepTime</td>
+				<td>@Model.CookTime</td>
+				<td>@Model.Yield</td>
+			</tr>
+		</tbody>
+	</table>
+	<h3>Ingredients</h3>
+	@foreach (var component in Model.IngredientsByComponent)
+	{
+		@if (component.Key != string.Empty)
 		{
-			foreach (var ingredient in component.Value)
-			{
-				<li>@Html.DisplayFor(i => ingredient.Name)</li>
-			}
+			<h4>For @component.Key</h4>
 		}
-	</ul>
+		<ul>
+			@foreach (var ingredient in component.Value)
+			{
+				<li>@ingredient.Name</li>
+			}
+		</ul>
+	}
+	<h3>Instructions</h3>
+	<ol>
+		@foreach (var instruction in Model.Instructions)
+		{
+			<li>@instruction</li>
+		}
+	</ol>
+	<h5>Notes</h5>
+	<ol>
+		@foreach (var note in Model.Notes)
+		{
+			<li>@note</li>
+		}
+	</ol>
 </div>
 
 
