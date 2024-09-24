@@ -28,7 +28,9 @@
 		<ul>
 			@foreach (var ingredient in component.Value)
 			{
-				<li>@ingredient.Quantity @ingredient.Name @(ingredient.Measurement == Database.Entities.Measurement.Unit ? string.Empty : ingredient.Measurement)</li>
+				<li>@(ingredient.Quantity == 0 ? string.Empty : ingredient.Quantity) 
+					@ingredient.Name 
+					@(ingredient.Measurement == Database.Entities.Measurement.Unit ? string.Empty : ingredient.Measurement)</li>
 			}
 		</ul>
 	}

@@ -1,49 +1,65 @@
 ﻿@model Services.DTOs.RecipeDTO
 
-<div>
-	<h2>@Model.Name</h2>
-	<table>
-		<thead>
-			<tr>
-				<th>Prep Time</th>
-				<th>Cook Time</th>
-				<th>Yields</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>@Model.PrepTime</td>
-				<td>@Model.CookTime</td>
-				<td>@Model.Yield</td>
-			</tr>
-		</tbody>
-	</table>
-	<h3>Ingredients</h3>
-	@foreach (var component in Model.IngredientsByComponent)
-	{
-		@if (component.Key != string.Empty)
+<div class="container-fluid text-bg-dark border card">
+	<div class="card-header">
+		<h2 class="text-success">@Model.Name</h2>
+		<div class="container text-center bg-primary text-info border">
+			<div class="row">
+				<div class="col">
+					Prep Time
+				</div>
+				<div class="col">
+					Cook Time
+				</div>
+				<div class="col">
+					Yields
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					@Model.PrepTime
+				</div>
+				<div class="col">
+					@Model.CookTime
+				</div>
+				<div class="col">
+					@Model.Yield
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="card-body">
+		<h3>Ingredients</h3>
+		@foreach (var component in Model.IngredientsByComponent)
 		{
-			<h4>For @component.Key</h4>
-		}
-		<ul>
-			@foreach (var ingredient in component.Value)
+			@if (component.Key != string.Empty)
 			{
-				<li>@ingredient.Quantity @ingredient.Name @(ingredient.Measurement == Database.Entities.Measurement.Unit ? string.Empty : ingredient.Measurement)</li>
+				<h4>For @component.Key</h4>
 			}
-		</ul>
-	}
-	<h3>Instructions</h3>
-	<ol>
-		@foreach (var instruction in Model.Instructions)
-		{
-			<li>@instruction</li>
+			<ul>
+				@foreach (var ingredient in component.Value)
+				{
+					<li>
+						@(ingredient.Quantity == 0 ? string.Empty : ingredient.Quantity)
+						@ingredient.Name
+						@(ingredient.Measurement == Database.Entities.Measurement.Unit ? string.Empty : ingredient.Measurement)
+					</li>
+				}
+			</ul>
 		}
-	</ol>
-	<h5>Notes</h5>
-	<ol>
-		@foreach (var note in Model.Notes)
-		{
-			<li>@note</li>
-		}
-	</ol>
+		<h3>Instructions</h3>
+		<ol>
+			@foreach (var instruction in Model.Instructions)
+			{
+				<li>@instruction</li>
+			}
+		</ol>
+		<h5 class="text-secondary">Notes</h5>
+		<ol>
+			@foreach (var note in Model.Notes)
+			{
+				<li class="text-secondary">@note</li>
+			}
+		</ol>
+	</div>
 </div>

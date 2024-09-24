@@ -18,7 +18,7 @@
 			@foreach (var recipe in Model)
 			{
 				<tr>
-					<td><a class="nav-link text-dark" asp-area="" asp-controller="RecipeList" asp-action="Recipe" asp-route-recipeId="@recipe.Id">@recipe.Name</a></td>
+					<td><a class="nav-link link-primary" asp-area="" asp-controller="RecipeList" asp-action="Recipe" asp-route-recipeId="@recipe.Id">@recipe.Name</a></td>
 					<td>@(recipe.PrepTime + recipe.CookTime)</td>
 				</tr>
 			}
