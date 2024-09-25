@@ -1,65 +1,141 @@
 ﻿@model Services.DTOs.RecipeDTO
+@{
+	double scaleValue;
+	try
+	{
+		if (!Double.TryParse(Context.Request.Query["scaleValue"].ToString(), out scaleValue))
+		{
+			scaleValue = 1;
+		}
+	}
+	catch (NullReferenceException)
+	{
+		scaleValue = 1;		
+	}
+}
 
-<div class="container-fluid text-bg-dark border card">
-	<div class="card-header">
-		<h2 class="text-success">@Model.Name</h2>
-		<div class="container text-center bg-primary text-info border">
-			<div class="row">
-				<div class="col">
-					Prep Time
-				</div>
-				<div class="col">
-					Cook Time
-				</div>
-				<div class="col">
-					Yields
+<div class="container-fluid">
+	<div class="row">
+		<div class="col align-content-center">
+			<h5 class="text-dark-emphasis">
+				Scale
+			</h5>
+			<form asp-action="Scale">
+				@switch (scaleValue)
+				{
+					case 0.25:
+						<button class="btn btn-primary" disabled="true" asp-route-recipeId="@Model.Id" asp-route-scaleValue="0.25">1/4</button>
+						<button class="btn btn-outline-primary" asp-route-recipeId="@Model.Id" asp-route-scaleValue="0.5">1/2</button>
+						<button class="btn btn-outline-primary" asp-route-recipeId="@Model.Id" asp-route-scaleValue="1">1</button>
+						<button class="btn btn-outline-primary" asp-route-recipeId="@Model.Id" asp-route-scaleValue="2">2</button>
+						<button class="btn btn-outline-primary" asp-route-recipeId="@Model.Id" asp-route-scaleValue="4">4</button>
+						break;
+					case 0.5:
+						<button class="btn btn-outline-primary" asp-route-recipeId="@Model.Id" asp-route-scaleValue="0.25">1/4</button>
+						<button class="btn btn-primary" disabled="true" asp-route-recipeId="@Model.Id" asp-route-scaleValue="0.5">1/2</button>
+						<button class="btn btn-outline-primary" asp-route-recipeId="@Model.Id" asp-route-scaleValue="1">1</button>
+						<button class="btn btn-outline-primary" asp-route-recipeId="@Model.Id" asp-route-scaleValue="2">2</button>
+						<button class="btn btn-outline-primary" asp-route-recipeId="@Model.Id" asp-route-scaleValue="4">4</button>
+						break;
+					case 1:
+						<button class="btn btn-outline-primary" asp-route-recipeId="@Model.Id" asp-route-scaleValue="0.25">1/4</button>
+						<button class="btn btn-outline-primary" asp-route-recipeId="@Model.Id" asp-route-scaleValue="0.5">1/2</button>
+						<button class="btn btn-primary" disabled="true" asp-route-recipeId="@Model.Id" asp-route-scaleValue="1">1</button>
+						<button class="btn btn-outline-primary" asp-route-recipeId="@Model.Id" asp-route-scaleValue="2">2</button>
+						<button class="btn btn-outline-primary" asp-route-recipeId="@Model.Id" asp-route-scaleValue="4">4</button>
+						break;
+					case 2:
+						<button class="btn btn-outline-primary" asp-route-recipeId="@Model.Id" asp-route-scaleValue="0.25">1/4</button>
+						<button class="btn btn-outline-primary" asp-route-recipeId="@Model.Id" asp-route-scaleValue="0.5">1/2</button>
+						<button class="btn btn-outline-primary" asp-route-recipeId="@Model.Id" asp-route-scaleValue="1">1</button>
+						<button class="btn btn-primary" disabled="true" asp-route-recipeId="@Model.Id" asp-route-scaleValue="2">2</button>
+						<button class="btn btn-outline-primary" asp-route-recipeId="@Model.Id" asp-route-scaleValue="4">4</button>
+						break;
+					case 4:
+						<button class="btn btn-outline-primary" asp-route-recipeId="@Model.Id" asp-route-scaleValue="0.25">1/4</button>
+						<button class="btn btn-outline-primary" asp-route-recipeId="@Model.Id" asp-route-scaleValue="0.5">1/2</button>
+						<button class="btn btn-outline-primary" asp-route-recipeId="@Model.Id" asp-route-scaleValue="1">1</button>
+						<button class="btn btn-outline-primary" asp-route-recipeId="@Model.Id" asp-route-scaleValue="2">2</button>
+						<button class="btn btn-primary" disabled="true" asp-route-recipeId="@Model.Id" asp-route-scaleValue="4">4</button>
+						break;
+					default:
+						<button class="btn btn-outline-primary" asp-route-recipeId="@Model.Id" asp-route-scaleValue="0.25">1/4</button>
+						<button class="btn btn-outline-primary" asp-route-recipeId="@Model.Id" asp-route-scaleValue="0.5">1/2</button>
+						<button class="btn btn-outline-primary" asp-route-recipeId="@Model.Id" asp-route-scaleValue="1">1</button>
+						<button class="btn btn-outline-primary" asp-route-recipeId="@Model.Id" asp-route-scaleValue="2">2</button>
+						<button class="btn btn-outline-primary" asp-route-recipeId="@Model.Id" asp-route-scaleValue="4">4</button>
+						break;
+				}
+			</form>
+		</div>
+		<div class="container-fluid border card col-10">
+			<div class="card-header">
+				<h2 class="text-success">@Model.Name</h2>
+				<a class="link-info link-underline" href="@Model.Url">@Model.Url</a>
+				<div class="container text-center mt-2">
+					<div class="row border-bottom-5">
+						<div class="col fw-bold mx-3 my-1">
+							Prep Time
+						</div>
+						<div class="col fw-bold mx-3 my-1">
+							Cook Time
+						</div>
+						<div class="col fw-bold mx-3 my-1">
+							Yields
+						</div>
+					</div>
+					<div class="row">
+						<div class="col mx-3 my-1">
+							@Model.PrepTime
+						</div>
+						<div class="col mx-3 my-1">
+							@Model.CookTime
+						</div>
+						<div class="col mx-3 my-1">
+							@Model.Yield
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col">
-					@Model.PrepTime
-				</div>
-				<div class="col">
-					@Model.CookTime
-				</div>
-				<div class="col">
-					@Model.Yield
-				</div>
+			<div class="card-body">
+				<h3>Ingredients</h3>
+				@foreach (var component in Model.IngredientsByComponent)
+				{
+					@if (component.Key != string.Empty)
+					{
+						<h4>For @component.Key</h4>
+					}
+					<ul class="list-unstyled">
+						@foreach (var ingredient in component.Value)
+						{
+							<li>
+								@(ingredient.Quantity == 0 ? string.Empty : ingredient.Quantity)
+								@(ingredient.Measurement == Database.Entities.Measurement.Unit ? string.Empty : ingredient.Measurement)
+								@ingredient.Name
+							</li>
+						}
+					</ul>
+				}
+				<h3>Instructions</h3>
+				<ol>
+					@foreach (var instruction in Model.Instructions)
+					{
+						<li>@instruction</li>
+					}
+				</ol>
+				<h5 class="text-secondary">Notes</h5>
+				<ol>
+					@foreach (var note in Model.Notes)
+					{
+						<li class="text-secondary">@note</li>
+					}
+				</ol>
 			</div>
 		</div>
-	</div>
-	<div class="card-body">
-		<h3>Ingredients</h3>
-		@foreach (var component in Model.IngredientsByComponent)
-		{
-			@if (component.Key != string.Empty)
-			{
-				<h4>For @component.Key</h4>
-			}
-			<ul>
-				@foreach (var ingredient in component.Value)
-				{
-					<li>
-						@(ingredient.Quantity == 0 ? string.Empty : ingredient.Quantity)
-						@ingredient.Name
-						@(ingredient.Measurement == Database.Entities.Measurement.Unit ? string.Empty : ingredient.Measurement)
-					</li>
-				}
-			</ul>
-		}
-		<h3>Instructions</h3>
-		<ol>
-			@foreach (var instruction in Model.Instructions)
-			{
-				<li>@instruction</li>
-			}
-		</ol>
-		<h5 class="text-secondary">Notes</h5>
-		<ol>
-			@foreach (var note in Model.Notes)
-			{
-				<li class="text-secondary">@note</li>
-			}
-		</ol>
+		<div class="col align-content-center">
+			<h5 class="text-dark-emphasis">
+				Conversions
+			</h5>
+		</div>
 	</div>
 </div>

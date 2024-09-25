@@ -37,7 +37,7 @@ namespace WebApp.Controllers
         }
 
         // POST: ScrapeRecipeController/SaveRecipe
-        [HttpPost("ScrapeRecipe/Result")]
+        [HttpPost("ScrapeRecipe/Save")]
         [ValidateAntiForgeryToken]
         public ActionResult Save()
         {

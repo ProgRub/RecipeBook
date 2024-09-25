@@ -6,6 +6,7 @@ using Services.IndividualServices;
 using Services;
 using Services.DTOs;
 using WebApp.Models;
+using Database.Entities;
 
 namespace WebApp.Controllers
 {
@@ -24,6 +25,13 @@ namespace WebApp.Controllers
         public ActionResult Recipe(int recipeID)
         {
             return View(ServicesFacade.GetRecipe(recipeID));
-        }
-    }
+		}
+
+		// POST: RecipeList/Recipe
+		[HttpPost("RecipeList/Recipe")]
+		public ActionResult Scale(int recipeID,double scaleValue)
+		{
+			return View("Recipe",ServicesFacade.GetScaledRecipe(ServicesFacade.GetRecipe(recipeID), scaleValue));
+		}
+	}
 }
